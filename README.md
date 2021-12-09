@@ -1,3 +1,3 @@
 # Documentation
 
-See the Wiki tab
+See the Wiki tab: https://github.com/Team2530/Documentation/wiki

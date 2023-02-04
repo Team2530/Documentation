@@ -16,5 +16,5 @@ layout: default
 # My Title
 ```
     - You should split the document into multiple sections
-5. Add the new page to the [index](./index.md).
+5. Add the new page to the [index](./index). NOTE: Do **NOT** add the `.md` file extension to the link.
 6. Commit and push your code to github

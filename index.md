@@ -1,6 +1,8 @@
 ---
 Title: Home
 category: pages
+layout: home
+---
 order: 1
 ---
 

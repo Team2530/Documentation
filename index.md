@@ -31,6 +31,7 @@ Other teams don't need to read these.
 - [Subsystems](./Subsystems)
 - [Commands](./Commands)
 - [Constants](./Constants)
+- [Programmers Reference Links](./Programming-Reference-Links.md)
 
 ### Device programming
 - [Programming motors](./Programming-motors)
@@ -52,4 +53,10 @@ Other teams don't need to read these.
 - [Driver Station Dashboard](./DS-Dashboard-Setting)
 - [PCM Troubleshooting](./PCM-Troubleshooting)
 
-{:toc}
+### Other
+- [How to create pages](./How-to-create-pages.md)
+- [Generic Scouting Form](./Generic-Scouting-Form.md)
+- [Scouting Portal](./Scouting-Portal.md)
+- [Hall effect](./Hall-Effect---on-turret.md)
+- [Pit checklist](./Pit-Checklist.md)
+- [Programming motors](./Programming-motors.md)

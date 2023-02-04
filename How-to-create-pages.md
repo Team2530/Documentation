@@ -6,11 +6,15 @@ layout: default
 
 # How to create pages
 
-# NOTICE: This page required an update
-
-- Step one: [go to the team wiki.](../)
-- Step two: Click the button that says "Edit"
-- Step three: Add an entry in one of the sections for your page, and title it similarly to the rest
-- Step four: Write accurate and helpful documentation about the topic you are writing about. (this part could be hard, depends on how good you ar att riting)
-
-GitHub uses Markdown for text formatting. You can learn about all of its features at https://help.github.com/articles/basic-writing-and-formatting-syntax.
+1. Go to https://github.com/Team2530/Documentation/
+2. Press the '.' key on your keyboard. This will open github.dev.
+3. Add a new file called pagename.md
+4. Add content to the file
+    - The file is a markdown file. You can read about markdown here: https://help.github.com/articles/basic-writing-and-formatting-syntax
+    - You should include a title at the start
+```md
+# My Title
+```
+    - You should split the document into multiple sections
+5. Add the new page to the [index](./index.md).
+6. Commit and push your code to github

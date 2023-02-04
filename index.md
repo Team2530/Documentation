@@ -3,8 +3,6 @@ Title: Home
 category: pages
 layout: home
 ---
-layout: post
----
 
 # Welcome to the FRC Team 2530 Programming Documentation!
 

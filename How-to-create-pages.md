@@ -1,7 +1,7 @@
 ---
 Title: How to create pages
 category: pages
-layout: post
+layout: page
 ---
 
 # NOTICE: This page required an update

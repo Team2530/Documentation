@@ -1,7 +1,7 @@
 ---
 Title: Java Tutorial
 category: pages
-layout: post
+layout: page
 ---
 Hello! Welcome to Team 2530's Java Tutorial! This is a basic overview of Java programming in general, and more in depth tutorials can be found [here](https://www.w3schools.com/java/). Again, this tutorial will cover the basics of Java programming, but it is recommended that you do some exploring and work on your own.
 

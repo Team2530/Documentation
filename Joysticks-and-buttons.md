@@ -1,7 +1,7 @@
 ---
 Title: Joysticks and Buttons
 category: pages
-layout: post
+layout: page
 ---
 
 You already learned the basics of button mapping in the [getting started article](https://github.com/Team2530/Documentation/wiki/Getting-started-with-the-robot), but this article goes more into the specifics of our controllers.

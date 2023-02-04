@@ -1,7 +1,7 @@
 ---
 Title: Code Style Guide
 category: pages
-layout: post
+layout: page
 ---
 Code is most readable when it's written in a consistent _style_, especially in a team setting. Please keep the following conventions in mind while writing Java for the robot. If there are any you don't understand, refer to the example at the bottom or ask a mentor/lead.
 - Use **camel case** for regular variable and method names. Please name them with words or common abbreviations (like PID) if possible.

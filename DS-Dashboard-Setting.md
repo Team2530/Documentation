@@ -1,7 +1,7 @@
 ---
 Title: DS Dashboard Setting
 category: pages
-layout: post
+layout: page
 ---
 
 It's kinda dumb, but for some reason you can't get the interface selector to pick Shuffleboard (or anything, really) without an error along the lines of "Can't find script file ______.vbs."

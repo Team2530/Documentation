@@ -1,7 +1,7 @@
 ---
 Title: What we have learned from camera and object recognition
 category: pages
-layout: post
+layout: page
 ---
 The main objective for the 2019 season in terms of object recognition is to track lines inside the field and align the robot with that line. The two cameras that will be compared are the Microsoft LifeCam HD3000 and the Charmedlabs Pixy2 camera. Both Pros and Cons will be discussed below.
 

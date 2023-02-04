@@ -1,7 +1,7 @@
 ---
 Title: Setting up for a new season
 category: pages
-layout: post
+layout: page
 ---
 WPILib releases a new major version of their software every season, and it's important to update our software and migrate to the corresponding year's project after kickoff to avoid various issues.
 

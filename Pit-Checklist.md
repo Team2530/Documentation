@@ -1,7 +1,7 @@
 ---
 Title: Pit Checklist
 category: pages
-layout: post
+layout: page
 ---
 ### Entry
 - [ ] Tighten and check bolts

@@ -1,7 +1,7 @@
 ---
 Title: Generic Scouting Form
 category: pages
-layout: post
+layout: page
 ---
 
 ```

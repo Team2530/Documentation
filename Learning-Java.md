@@ -1,7 +1,7 @@
 ---
 Title: Learning Java
 category: pages
-layout: post
+layout: page
 ---
 There are a variety of websites that are useful for learning Java.
 

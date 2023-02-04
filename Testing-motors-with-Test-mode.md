@@ -1,7 +1,7 @@
 ---
 Title: Testing motors with test mode
 category: pages
-layout: post
+layout: page
 ---
 On the Driver Station, there's a "Test" option alongside "Autonomous" and "Teleop":
 

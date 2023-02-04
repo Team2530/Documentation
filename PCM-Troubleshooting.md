@@ -1,7 +1,7 @@
 ---
 Title: PCM Troubleshooting
 category: pages
-layout: post
+layout: page
 ---
 As with most troubleshooting, this is mostly common sense.
 

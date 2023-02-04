@@ -1,7 +1,7 @@
 ---
 Title: PhotonVision
 category: pages
-layout: post
+layout: page
 ---
 # Installing PhotonVision
 

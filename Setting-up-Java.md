@@ -1,7 +1,7 @@
 ---
 Title: (Deprecated) Setting up Java
 category: pages
-layout: post
+layout: page
 ---
 ### THIS ARTICLE IS DEPRECIATED. You no longer need to manually install Java, as it is bundled with the [WPILib VSCode installation](https://github.com/Team2530/Documentation/wiki/Setting-up-VSCode).
 

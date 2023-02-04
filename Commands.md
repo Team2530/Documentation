@@ -1,7 +1,7 @@
 ---
 Title: Commands
 category: pages
-order: 1
+layout: post
 ---
 
 Commands are where the methods created in the subsystems are actually run. They're named with a short summary of what they do.

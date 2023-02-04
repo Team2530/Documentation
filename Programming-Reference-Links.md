@@ -1,7 +1,7 @@
 ---
 Title: Programming Reference Links
 category: pages
-order: 1
+layout: post
 ---
 [Documentation From CTR Electronics](https://store.ctr-electronics.com/content/api/java/html/index.html)
 

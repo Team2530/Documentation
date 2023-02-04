@@ -1,7 +1,7 @@
 ---
 Title: Scouting Portal
 category: pages
-order: 1
+layout: post
 ---
 NOTE: when creating a new scouting page, paste [the contents of this](./Generic-Scouting-Form) into your new page.
 

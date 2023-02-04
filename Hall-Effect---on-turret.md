@@ -1,7 +1,7 @@
 ---
 Title: Hall Effect--on turret
 category: pages
-order: 1
+layout: post
 ---
 
 https://components101.com/a3144-hall-effect-sensor

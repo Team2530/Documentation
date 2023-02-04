@@ -1,7 +1,7 @@
 ---
 Title: Laptop Rules
 category: pages
-order: 1
+layout: post
 ---
 
 ### LAPTOP CONDUCT

@@ -1,7 +1,7 @@
 ---
 Title: Phoenix Tuner Use
 category: pages
-order: 1
+layout: post
 ---
 Phoenix Tuner is a pretty simple piece of software. It's mostly automatic.
 

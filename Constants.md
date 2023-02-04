@@ -1,7 +1,7 @@
 ---
 Title: Constants
 category: pages
-order: 1
+layout: post
 ---
 
 Constants are values that will stay the same **while the robot runs**, such as wheel sizes and motor ports. They're a useful way to change specific aspects of the robot without being familiar with the code for those components, which makes them essential in a team setting. They're all stored in `Constants.java` to make it even more convenient.

@@ -1,7 +1,7 @@
 ---
 Title: URL Links
 category: pages
-order: 1
+layout: post
 ---
 Welcome to the Documentation wiki!
 

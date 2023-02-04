@@ -1,7 +1,7 @@
 ---
 Title: Programming Motors
 category: pages
-order: 1
+layout: post
 ---
 Programming motors is the most fundamental programming task in FIRST, as motors control all robot movement. Motors are typically hooked up to _motor controllers_, which allow programmatic control of motor speed and direction.
 

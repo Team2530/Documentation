@@ -1,7 +1,7 @@
 ---
 Title: Programming the Limelight
 category: pages
-order: 1
+layout: post
 ---
 The Limelight is a highly capable camera. It can be used as a general-purpose drive cam and switch on the fly to a tracking mode that identifies targets lined with retroreflective tape.
 

@@ -1,7 +1,7 @@
 ---
 Title: Setting up the PixyCam2
 category: pages
-order: 1
+layout: post
 ---
 The PixyCam2 (or just Pixy) is a camera with built-in object recognition.
 

@@ -1,7 +1,7 @@
 ---
 Title: Setting up Discord
 category: pages
-order: 1
+layout: post
 ---
 Our team uses a Discord server as our primary method of communication. It's important for all members to be in it because communication is important. Be sure to check it daily! (Better yet, set up push notifications on your phone!)
 

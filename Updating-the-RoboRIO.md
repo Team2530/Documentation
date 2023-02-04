@@ -1,8 +1,10 @@
 ---
 Title: Updating the RoboRIO
 category: pages
-layout: page
+layout: default
 ---
+# Updating the RoboRIO
+
 Here's the general overview:
 1. Follow the instructions on [this page](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/frc-game-tools.html#installing-the-frc-game-tools) to install the FRC Game Tools, which includes the RoboRIO Imaging software. (If your computer already has FRC Driver Station, it has this software too.)
 2. Find your local friendly RoboRIO connector cable. 

@@ -1,8 +1,10 @@
 ---
 Title: Commands
 category: pages
-layout: page
+layout: default
 ---
+
+# Commands
 
 Commands are where the methods created in the subsystems are actually run. They're named with a short summary of what they do.
 

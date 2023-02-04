@@ -1,8 +1,10 @@
 ---
 Title: Laptop Rules
 category: pages
-layout: page
+layout: default
 ---
+
+# Laptop Rules
 
 ### LAPTOP CONDUCT
 

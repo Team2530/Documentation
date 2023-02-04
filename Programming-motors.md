@@ -1,8 +1,11 @@
 ---
 Title: Programming Motors
 category: pages
-layout: page
+layout: default
 ---
+
+# Programming motors
+
 Programming motors is the most fundamental programming task in FIRST, as motors control all robot movement. Motors are typically hooked up to _motor controllers_, which allow programmatic control of motor speed and direction.
 
 You should have already followed the **Installing programs** articles at this point. If not, [go back to Home](https://github.com/Team2530/Documentation/wiki) and do those first. If you skipped installing the CTRE Phoenix library, make sure you go back and do that now.

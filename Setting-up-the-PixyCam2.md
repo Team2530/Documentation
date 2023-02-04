@@ -1,8 +1,11 @@
 ---
 Title: Setting up the PixyCam2
 category: pages
-layout: page
+layout: default
 ---
+
+# Setting up the PixyCam2
+
 The PixyCam2 (or just Pixy) is a camera with built-in object recognition.
 
 ## Installing Pixymon

@@ -1,8 +1,9 @@
 ---
 Title: Programming Reference Links
 category: pages
-layout: page
+layout: default
 ---
+# Programming reference links
 [Documentation From CTR Electronics](https://store.ctr-electronics.com/content/api/java/html/index.html)
 
 [Documentation From WPI](http://first.wpi.edu/FRC/roborio/release/docs/java/) 

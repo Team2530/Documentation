@@ -1,8 +1,10 @@
 ---
 Title: How to create pages
 category: pages
-layout: page
+layout: default
 ---
+
+# How to create pages
 
 # NOTICE: This page required an update
 

@@ -1,8 +1,9 @@
 ---
 Title: PCM Troubleshooting
 category: pages
-layout: page
+layout: default
 ---
+# PCM Troubleshooting
 As with most troubleshooting, this is mostly common sense.
 
 First, you'll want to see what info you can gather from the device itself. Using the following diagram, try to narrow down the problem. 

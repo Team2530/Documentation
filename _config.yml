@@ -2,3 +2,5 @@ title: Team2530 Documentation
 description: docs
 theme: just-the-docs
 color_scheme: dark
+has_toc: true
+search_enabled: true

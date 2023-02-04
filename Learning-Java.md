@@ -1,8 +1,9 @@
 ---
 Title: Learning Java
 category: pages
-layout: page
+layout: default
 ---
+# Learning Java
 There are a variety of websites that are useful for learning Java.
 
 If you've never programmed before in your life or only understand it a little, [Codecademy's Java tutorial](https://www.codecademy.com/learn/learn-java) is a great resource. It explains what programming is and goes through the basics of Java with opportunities for you to practice. Make sure that you know how to write (not just read) code with methods, variables, if-else statements, conditionals, objects, arrays, and loops. It would also be really, really helpful for your understanding if you learned about classes and static variables. (You may need to do some independent web-searching for some of these. Or just ask a lead or mentor!)

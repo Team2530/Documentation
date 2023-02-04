@@ -1,8 +1,10 @@
 ---
 Title: URL Links
 category: pages
-layout: page
+layout: default
 ---
+
+# URL Links
 Welcome to the Documentation wiki!
 
 

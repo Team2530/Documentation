@@ -1,8 +1,10 @@
 ---
 Title: Getting Started with the Robot
 category: pages
-layout: page
+layout: default
 ---
+
+# Getting started with the robot
 
 In this article, you will learn how to make edits to the robot's code and get the updated code onto the robot.
 

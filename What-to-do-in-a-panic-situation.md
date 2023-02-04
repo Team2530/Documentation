@@ -1,8 +1,10 @@
 ---
 Title: What to do in a panic situation
 category: pages
-layout: page
+layout: default
 ---
+# What to do in a panic situation
+
 Our documentation can't possibly cover everything you might need to know, and some links will inevitably break as website providers shift things around. In the event that you can't find what you need, don't panic. The following is a list of helpful resources you can check:
 1. If you're looking for information about something from a specific provider, whether it's hardware (like the Talon FX) or software (like WPILib), there will almost definitely be up-to-date documentation on the **official provider's website.** (For example, Cross the Road Electronics has plenty of information and resources about the Talon FX.)
 2. If we've used something before but haven't documented it yet, you can look through **robot code from old seasons** for examples of implementation. You can also **ask a lead or mentor** :)

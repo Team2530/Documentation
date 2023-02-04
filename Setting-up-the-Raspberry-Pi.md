@@ -1,8 +1,11 @@
 ---
 Title: Setting up the Raspberry Pi
 category: pages
-layout: page
+layout: default
 ---
+
+# Setting up the raspberry pi
+
 This page will explain how to set up the Pixy with the Raspberry Pi.
 
 ### Powering The Pi

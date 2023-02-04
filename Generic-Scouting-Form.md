@@ -1,8 +1,10 @@
 ---
 Title: Generic Scouting Form
 category: pages
-layout: page
+layout: default
 ---
+
+# Generic Scouting form
 
 ```
 Match Number|Hatches Scored|Cargo Scored|Autonomous/Camera|Endgame |Notable Features|

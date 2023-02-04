@@ -1,14 +1,15 @@
 ---
 Title: PhotonVision
 category: pages
-layout: page
+layout: default
 ---
-# Installing PhotonVision
+# PhotonVision
+## Installing PhotonVision
 
 [PhotonVision] [PhotonVision](https://photonvision.org/)
 
 
-# Calibrating the LimeLight for AprilTags
+## Calibrating the LimeLight for AprilTags
 
 After downloading the software, connect the LimeLight to the robot and turn it on. Run an IP scan with AngryIPScanner to locate the LimeLight across the network. It should be on `10.te.am.XX` (So, 10.25.30.XX for us), look for it once the IP scan has complete. (It will be named something like photonvision.local). 
 

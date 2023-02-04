@@ -1,8 +1,11 @@
 ---
 Title: Setting up version control
 category: pages
-layout: page
+layout: default
 ---
+
+# Setting up VCS
+
 We use version control software to manage and store our robot code. GitHub is a cloud version control system where we store our code and documentation. Everyone on the team can download, edit, and upload code here. It's indescribably helpful to also have companion software on your computer, which downloads and uploads code automatically to make editing with VS Code more convenient.
 
 ## Setting up GitHub

@@ -1,8 +1,10 @@
 ---
 Title: Pit Checklist
 category: pages
-layout: page
+layout: default
 ---
+# Pit Checklist
+
 ### Entry
 - [ ] Tighten and check bolts
 - [ ] Check Omni wheels for cracks

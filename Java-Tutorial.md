@@ -112,7 +112,7 @@ String bananas = "yellow";
 boolean perhaps = true;
 double x = 1.5;
 int[][] matrix = {{1,3},{2,7}}
-{% raw %}
+{% endraw %}
 ```
 `int` is used to define numbers without a decimal, so things like 2530 or 517.
 

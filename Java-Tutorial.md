@@ -106,11 +106,13 @@ This may seem like a lot, but don't worry, It will be broken down into little pa
 
 One thing you may have noticed is that each variable, or name that holds a specific value, has a specific keyword before it. Each of these have there own uses. 
 ```java
+{% raw %}
 int apples = 5;
 String bananas = "yellow";
 boolean perhaps = true;
 double x = 1.5;
 int[][] matrix = {{1,3},{2,7}}
+{% raw %}
 ```
 `int` is used to define numbers without a decimal, so things like 2530 or 517.
 

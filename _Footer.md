@@ -1,0 +1,1 @@
+[Go back to Home](./Home)　|　[Couldn't find what you were looking for?](./What-to-do-in-a-panic-situation)　|　[How to create documentation](./How-to-create-pages)

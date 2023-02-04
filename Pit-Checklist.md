@@ -1,3 +1,8 @@
+---
+Title: Pit Checklist
+category: pages
+order: 1
+---
 ### Entry
 - [ ] Tighten and check bolts
 - [ ] Check Omni wheels for cracks

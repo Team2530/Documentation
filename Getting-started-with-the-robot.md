@@ -1,3 +1,9 @@
+---
+Title: Getting Started with the Robot
+category: pages
+order: 1
+---
+
 In this article, you will learn how to make edits to the robot's code and get the updated code onto the robot.
 
 You should have already followed the **Installing programs** articles at this point. If not, [go back to Home](https://github.com/Team2530/Documentation/wiki) and do those first.

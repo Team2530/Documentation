@@ -1,3 +1,8 @@
+---
+Title: Setting up Discord
+category: pages
+order: 1
+---
 Our team uses a Discord server as our primary method of communication. It's important for all members to be in it because communication is important. Be sure to check it daily! (Better yet, set up push notifications on your phone!)
 
 When you finish the steps to join, you should see our "square root of -1" logo on the left side of the screen.

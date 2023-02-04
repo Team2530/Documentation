@@ -1,3 +1,9 @@
+---
+Title: Commands
+category: pages
+order: 1
+---
+
 Commands are where the methods created in the subsystems are actually run. They're named with a short summary of what they do.
 
 ### To create a new command:

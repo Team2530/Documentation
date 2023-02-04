@@ -1,3 +1,8 @@
+---
+Title: Programming Reference Links
+category: pages
+order: 1
+---
 [Documentation From CTR Electronics](https://store.ctr-electronics.com/content/api/java/html/index.html)
 
 [Documentation From WPI](http://first.wpi.edu/FRC/roborio/release/docs/java/) 

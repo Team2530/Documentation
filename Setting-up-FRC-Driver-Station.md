@@ -1,3 +1,8 @@
+---
+Title: Setting up FRC Driver Station
+category: pages
+order: 1
+---
 FRC Driver Station is software that enables a computer to be utilized as (surprise surprise) a driver station for FRC robots. This software is required to be installed on at least one computer we bring to competitions in order to control our robot.
 
 ## Installation

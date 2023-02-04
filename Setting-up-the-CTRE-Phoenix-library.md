@@ -1,3 +1,8 @@
+---
+Title: Setting up the CTRE Phoenix library
+category: pages
+order: 1
+---
 The CTRE Phoenix library is required to program our CTRE motors. In this article, we'll focus on the library, but the installer also comes with Phoenix Tuner, which is explained [here](https://github.com/Team2530/Documentation/wiki/Phoenix-Tuner-Use).
 
 ## Computer installation

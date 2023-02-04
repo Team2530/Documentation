@@ -1,3 +1,9 @@
+---
+Title: How to use Trello
+category: pages
+order: 1
+---
+
 Our team uses Trello to keep track of, discuss, and stay on top of tasks. It's important for all members to regularly check the boards so that everyone knows what to do!
 
 # Essential steps

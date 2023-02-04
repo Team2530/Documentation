@@ -1,3 +1,8 @@
+---
+Title: Setting up VSCode
+category: pages
+order: 1
+---
 Visual Studio Code (VS Code) is the software that replaced Eclipse as the primary IDE for FIRST in 2019. The WPILib version adds features to aid in development of FIRST robots. We use this software to write our robot code.
 
 ## Installation on Windows, macOS, and Linux (recommended)

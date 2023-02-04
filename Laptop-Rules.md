@@ -1,3 +1,9 @@
+---
+Title: Laptop Rules
+category: pages
+order: 1
+---
+
 ### LAPTOP CONDUCT
 
 Common sense. That's about it.

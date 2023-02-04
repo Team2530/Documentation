@@ -1,3 +1,8 @@
+---
+Title: PCM Troubleshooting
+category: pages
+order: 1
+---
 As with most troubleshooting, this is mostly common sense.
 
 First, you'll want to see what info you can gather from the device itself. Using the following diagram, try to narrow down the problem. 

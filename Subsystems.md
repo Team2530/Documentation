@@ -1,3 +1,8 @@
+---
+Title: Subsystems
+category: pages
+order: 1
+---
 Subsystems are where methods are created and defined. They're organized by the part of the robot they're for (elevator, LimeLight, shooter, etc.)
 
 ### To create a new subsystem:

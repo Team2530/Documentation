@@ -1,3 +1,9 @@
+---
+Title: Home
+category: pages
+order: 1
+---
+
 # Welcome to the FRC Team 2530 Programming Documentation!
 
 <img src="https://user-images.githubusercontent.com/116770284/216777461-d6618507-27f9-415b-9f14-2be387658675.svg" height=200px/>

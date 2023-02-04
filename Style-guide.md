@@ -1,3 +1,8 @@
+---
+Title: Code Style Guide
+category: pages
+order: 1
+---
 Code is most readable when it's written in a consistent _style_, especially in a team setting. Please keep the following conventions in mind while writing Java for the robot. If there are any you don't understand, refer to the example at the bottom or ask a mentor/lead.
 - Use **camel case** for regular variable and method names. Please name them with words or common abbreviations (like PID) if possible.
 - Use **all-caps snake case** for constant variable names. Also name these with words or common abbreviations.
@@ -8,6 +13,7 @@ Code is most readable when it's written in a consistent _style_, especially in a
 - Try to keep individual lines of code **under 120 characters.** VS Code has a faint grey line as you scroll right to help indicate this. If you need to shorten a line, try creating "temporary" variables to split up and store individual components.
 - Don't forget to remember to **use plenty of comments.** If you think you're using enough comments, you probably need to add more.
 - If you can't remember a specific convention or don't understand one yet, just look around the code and **use common sense.** As long as it looks okay, it's probably fine.
+- Nesting is bad. If you can avoid it, do so.
 
 You should get in the habit of using `Shift + Alt + F` often - this is a shortcut in VS Code that performs some formatting on your code automatically, such as spacing, bracket placement, and line character limits. This is especially useful when copy-pasting.
 

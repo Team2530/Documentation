@@ -1,3 +1,9 @@
+---
+Title: Generic Scouting Form
+category: pages
+order: 1
+---
+
 ```
 Match Number|Hatches Scored|Cargo Scored|Autonomous/Camera|Endgame |Notable Features|
 ------------|--------------|------------|:---------------:|:------:|----------------|

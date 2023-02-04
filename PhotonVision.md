@@ -1,3 +1,8 @@
+---
+Title: PhotonVision
+category: pages
+order: 1
+---
 # Installing PhotonVision
 
 [PhotonVision] [PhotonVision](https://photonvision.org/)

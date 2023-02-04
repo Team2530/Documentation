@@ -1,3 +1,8 @@
+---
+Title: Setting up the Raspberry Pi
+category: pages
+order: 1
+---
 This page will explain how to set up the Pixy with the Raspberry Pi.
 
 ### Powering The Pi

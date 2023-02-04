@@ -1,3 +1,9 @@
+---
+Title: DS Dashboard Setting
+category: pages
+order: 1
+---
+
 It's kinda dumb, but for some reason you can't get the interface selector to pick Shuffleboard (or anything, really) without an error along the lines of "Can't find script file ______.vbs."
 The solution is a bit obscure, but relatively easy.
 

@@ -1,3 +1,8 @@
+---
+Title: 2023 Checklist
+category: pages
+layout: default
+---
 # 2023 Checklist
 
 1. Test the arm

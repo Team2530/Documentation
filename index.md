@@ -60,3 +60,4 @@ Other teams don't need to read these.
 - [Hall effect](./Hall-Effect---on-turret)
 - [Pit checklist](./Pit-Checklist)
 - [Programming motors](./Programming-motors)
+- [Coltons Desmos Arm Sim](./Coltons_ArmV2_Simulation)

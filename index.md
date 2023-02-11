@@ -16,7 +16,7 @@ Other teams don't need to read these.
 - [Setting up Trello](./How-to-Use-Trello)
 
 ### 2023 Charged Up
-- [2023 checklist](./2023_Checklist.md)
+- [2023 checklist](./2023_Checklist)
 
 ### Setting up the development environment
 - [Setting up Visual Studio Code](./Setting-up-VSCode)

@@ -38,6 +38,7 @@ Other teams don't need to read these.
 
 ### Device programming
 - [Programming motors](./Programming-motors)
+- [Motor Naming Conventions](./MotorNaming)
 - [Joysticks and buttons](./Joysticks-and-buttons)
 - [Programming the Limelight](./Programming-the-Limelight)
 - [PhotonVison](./PhotonVision)

@@ -42,6 +42,8 @@ Other teams don't need to read these.
 - [Joysticks and buttons](./Joysticks-and-buttons)
 - [Programming the Limelight](./Programming-the-Limelight)
 - [PhotonVison](./PhotonVision)
+- [Robot Coding Standard](./RobotCodingStandard.md)
+- [Robot Debugging](./RobotCodeDebugging.md)
 
 ### Hardware usage/maintenance
 - [Installing RevLib Client](https://docs.revrobotics.com/sparkmax/rev-hardware-client/getting-started-with-the-rev-hardware-client)

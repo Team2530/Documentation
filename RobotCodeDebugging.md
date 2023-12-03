@@ -11,7 +11,7 @@ layout: default
 * Does the robot move in the correct direction using an XBox controller? If not, correct the controller axis/inversions to get it right.
 * Does the steering go to it's target position based on XBox controller input? If not, you may need to tune the steer/azimuth motor PID.
   
-**Now that you know driving behavior is correct, start at the beginning for vision:**
+# Now that you know driving behavior is correct, start at the beginning for vision:
 
 * Is the correct type of Limelight pipeline active (Apriltag 3d targetting)
 * Does the limelight see targets properly? If not, tune the gains and thresholds

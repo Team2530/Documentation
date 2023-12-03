@@ -10,7 +10,9 @@ layout: default
 * Are all 4 CANCoders in phase with the motors, meaning when the CANCoder value goes up, the motor's encoder value goes up. If not, fix the sensorDirection in the code.
 * Does the robot move in the correct direction using an XBox controller? If not, correct the controller axis/inversions to get it right.
 * Does the steering go to it's target position based on XBox controller input? If not, you may need to tune the steer/azimuth motor PID.
+  
 **Now that you know driving behavior is correct, start at the beginning for vision:**
+
 * Is the correct type of Limelight pipeline active (Apriltag 3d targetting)
 * Does the limelight see targets properly? If not, tune the gains and thresholds
 * Is the limelight returning good data for the target, is it properly calculating the distance and rotation of the target? If not, make sure your target is the correct size, etc.

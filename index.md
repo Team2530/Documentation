@@ -42,7 +42,7 @@ Other teams don't need to read these.
 - [Joysticks and buttons](./Joysticks-and-buttons)
 - [Programming the Limelight](./Programming-the-Limelight)
 - [PhotonVison](./PhotonVision)
-- [Robot Coding Standard](./RobotCodingStandard)
+- [Robot Coding GuideLines](./RobotCodingGuideLines)
 - [Robot Code Debugging](./RobotCodeDebugging)
 
 ### Hardware usage/maintenance

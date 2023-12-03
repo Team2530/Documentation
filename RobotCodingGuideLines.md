@@ -1,9 +1,9 @@
 ---
-Title: Robot Coding Standard
+Title: Robot Coding GuideLines
 category: pages
 layout: default
 ---
-## Robot Coding Standard
+## Robot Coding GuideLines
 
 # Swerve module
 

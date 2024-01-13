@@ -1,5 +1,0 @@
-Changing robots: Inverting from Practice Bot to Competition Bot
-1) for(all drive motors) setInverted(FALSE);//or just comment out bro
-2) in DriveTrain Drive(): robotDrive->ArcadeDrive(stickY2, -stickZ2), get rid of that negative bro!
-3) in DriveTrain Turn(): robotDrive->ArcadeDrive(0, fix), set it to -fix
-4) check both goStraight() functions: make sure going right way!!

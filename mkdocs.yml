@@ -22,7 +22,7 @@ theme:
     - content.code.copy
     - content.code.select
 extra_css:
-  - styles.css
+  - style.css
 plugins:
   - search
   - tags

@@ -1,6 +1,7 @@
 # Code Style Guide
 
 Code is most readable when it's written in a consistent _style_, especially in a team setting. Please keep the following conventions in mind while writing Java for the robot. If there are any you don't understand, refer to the example at the bottom or ask a mentor/lead.
+
 - Use **camel case** for regular variable and method names. Please name them with words or common abbreviations (like PID) if possible.
 - Use **all-caps snake case** for constant variable names. Also name these with words or common abbreviations.
 - In statements, put **one space** between the reserved word and the parentheses (and the curly bracket if you have one.)

@@ -20,6 +20,7 @@ There are multiple different GitHub companion programs available, and it shouldn
 
 ### GitKraken
 GitKraken is a third-party software offered by Axosoft. Although there are many premium features, there are many useful integrations that are offered for free.
+
 - If it's not already installed, download it at [their website](https://www.gitkraken.com/) and run the installer.
 - If it is already installed, go to File > Sign into a Different Account.
 - Click "Sign in with Github". (Make sure you're actually signed in to GitHub on your browser first.)
@@ -27,6 +28,7 @@ GitKraken is a third-party software offered by Axosoft. Although there are many 
 - When the authentication is finished, the page will show a success message.
 
 You're not done! You need to clone (download) the robot code to your computer in order to edit it on VS Code. (You'll need to be a part of the Team2530 Organization first.)
+
 - Go to File > Clone Repo and select "Github.com".
 - Under "Where to clone to", click the Browse button and select a location on your computer. (It doesn't matter where -- though it might be a good idea to put it somewhere you'll remember.)
 - Under "Repository to clone", select "RobotCodeYYYY" (where "YYYY" is the current season.)
@@ -34,6 +36,7 @@ You're not done! You need to clone (download) the robot code to your computer in
 
 ### GitHub Desktop
 GitHub Desktop is a first-party software from GitHub Inc. itself. It's essentially a simpler version of GitKraken, albeit without some of the integrations.
+
 - If it's not already installed, download it at [their website](https://desktop.github.com/) and run the installer.
 - If it is already installed, go to File > Options...
 - Click "Sign out", then "Sign in". (Make sure you're actually signed in to GitHub on your browser first.)
@@ -41,6 +44,7 @@ GitHub Desktop is a first-party software from GitHub Inc. itself. It's essential
 - You should be automatically redirected back to GitHub Desktop.
 
 You're not done! You need to clone (download) the robot code to your computer in order to edit it on VS Code. (You'll need to be a part of the Team2530 Organization first.)
+
 - Go to File > Clone repository...
 - Select "Team2530/RobotCodeYYYY" (where "YYYY" is the current season) from the list that appears.
 - Under "Local path", click the Choose button and select a location on your computer. (It doesn't matter where -- though it might be a good idea to put it somewhere you'll remember.)

@@ -12,7 +12,7 @@ Follow the instructions on [this page](https://docs.wpilib.org/en/stable/docs/ze
 **The following steps only need to be completed once per season. If the RobotCode20XX repository (with the current year) already exists and has robot code in it, chances are that someone has already done this and you don't need to. All you have to do at this point is clone the new repository to your computer.**
 
 ## Update the RoboRIO
-[View the instructions here.](./Updating-the-RoboRIO)
+[View the instructions here.](https://team2530.github.io/Documentation/electronics/Updating-the-RoboRIO/)
 
 ## Configure a new project
 
@@ -43,12 +43,13 @@ At this point, you need to decide if you want to reuse the previous year's robot
 2. Click on the WPILib icon in the upper-right corner.
 3. Type "Manage Vendor Libraries" and select the option that appears.
 4. Select "Install new libraries (offline)".
-5. Select "CTRE-Phoenix" and "KauaiLabs_navX_FRC", then click OK. (If you don't see one or both of these, make sure that the [CTRE Phoenix](./Setting-up-the-CTRE-Phoenix-library) and [navX](./Setting-up-the-navX-library) libraries are installed on your computer.)
+5. Select "CTRE-Phoenix" and "KauaiLabs_navX_FRC", then click OK. (If you don't see one or both of these, make sure that the CTRE Phoenix and navX libraries are [installed on your computer](https://docs.wpilib.org/en/stable/docs/software/vscode-overview/3rd-party-libraries.html).)
 6. Once the installation is finished, you'll be prompted to build the robot code -- go ahead and confirm. If you imported a project, the errors might linger for a minute, but as long as the robot code builds successfully, you're good to go.
 
 ## Step 4: Push the changes to GitHub
 If you followed the steps in order, you should be able to simply push your changes to your `RobotCode20XX` repository.
 
 After these steps have been completed, for the rest of the season, all you have to do to set up another computer is:
+
 - install the latest version of WPILib
 - clone the new repository

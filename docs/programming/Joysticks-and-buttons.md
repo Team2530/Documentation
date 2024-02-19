@@ -23,6 +23,7 @@ We also use a transparent Xbox One controller that can glow because we're fancy 
 
 ## Using the controllers
 Some notes on axis/buttons:
+
 * Throttle is axis 3 (Joystick, used for powerfactor)
 * Joystick buttons’ numbers are written on the button
 * Most axises return between -1 and 1
@@ -31,5 +32,6 @@ Some notes on axis/buttons:
 * Xbox has 10 buttons, but only first 6 commonly used
 
 Here are some external resources on each controller type:  
-https://first.wpi.edu/FRC/roborio/beta/docs/java/edu/wpi/first/wpilibj/Joystick.html  
-https://first.wpi.edu/FRC/roborio/beta/docs/java/edu/wpi/first/wpilibj/XboxController.html
+
+* [Joystick](https://first.wpi.edu/FRC/roborio/beta/docs/java/edu/wpi/first/wpilibj/Joystick.html)  
+* [Xbox](https://first.wpi.edu/FRC/roborio/beta/docs/java/edu/wpi/first/wpilibj/XboxController.html)

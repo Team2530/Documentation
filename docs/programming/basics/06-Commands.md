@@ -19,9 +19,12 @@ Commands are where the methods created in the subsystems are actually run. They'
 
 ### To call commands:
 You're not quite done yet! Commands don't just start doing things magically! The final step is to actually run the command.
+
 1. Locate the place where you want to run your command.
+
 * If you're running the command in `RobotContainer.java`, you don't need to `import` the command, as it's already hooked up to do that. If you're running it somewhere else, beneath the other `import`s, type `import frc.robot.commands.NAME;`, where `NAME` is the name of the command.
 * A common scenario is hooking up your command to a joystick button. To do this, open `RobotContainer.java` (no need to `import`) and scroll down to the "Joysticks and Buttons" section. At the bottom of the "Joystick buttons" area, type `private final JoystickButton ButtonBUTTON = new JoystickButton(CONTROLLER, BUTTON);`, where `CONTROLLER` is the name of the controller and `BUTTON` is the ID of the button you want to link to (Google the controller if you're not sure what this is). Now scroll down to the `configureButtonBindings()` area and type `ButtonBUTTON`. If you want the command to run only once, type `.whenPressed();` -- otherwise, type `.whileHeld();`. Type Step 2 inside the parentheses.
+
 2. Type `new NAME()`, where `NAME` is the command's file name.
 
 ### About instant commands

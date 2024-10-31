@@ -8,6 +8,7 @@ theme:
   font:
     text: Roboto
   logo: assets/logo.svg # TODO: This logo is the wrong color
+  favicon: assets/favicon.ico
   features:
     - navigation.instant
     - navigation.instant.progress

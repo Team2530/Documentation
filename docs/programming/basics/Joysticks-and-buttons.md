@@ -6,7 +6,7 @@ layout: default
 
 # Joysticks and Buttons
 
-You already learned the basics of button mapping in the [getting started article](https://github.com/Team2530/Documentation/wiki/Getting-started-with-the-robot), but this article goes more into the specifics of our controllers.
+You already learned the basics of button mapping in the [getting started article](https://github.dev/Team2530/Documentation), but this article goes more into the specifics of our controllers.
 
 ## Types of controllers
 There are two different flavors of controllers, and the drive team tends to use both of them every year.

@@ -17,7 +17,7 @@ Further instructions can be found in the "installation docs" underneath the down
 Follow the instructions here: https://github.com/PseudoResonance/Pixy2JavaAPI#readme
 
 ## Configuring hardware
-If you're using the Pixy with a Raspberry Pi, follow [these instructions](https://github.com/Team2530/Documentation/wiki/Setting-up-the-Raspberry-Pi).
+If you're using the Pixy with a Raspberry Pi, follow [these instructions](https://team2530.github.io/Documentation/programming/setup/Setting-up-the-PixyCam2/).
 
 ## API docs
 https://ci.otake.pw/job/Pixy2JavaAPI/javadoc/index.html?overview-tree.html

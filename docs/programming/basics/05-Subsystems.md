@@ -20,4 +20,4 @@ Subsystems are where methods are created and defined. They're organized by the p
 * After the parentheses, type a `{` and press enter. This is where you'll write your method's code. In VSCode, a `}` should automatically appear where it needs to be.
 
 ### To call subsystem methods:
-These methods shouldn't actually be run within the subsystem files, only defined. That's what [commands](https://github.com/Team2530/Documentation/wiki/Commands) are for.
+These methods shouldn't actually be run within the subsystem files, only defined. That's what [commands](https://team2530.github.io/Documentation/programming/basics/06-Commands/) are for.

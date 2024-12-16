@@ -32,4 +32,4 @@ If you only need to do a simple task (such as running a single method when a but
 
 ***
 
-If you've made it this far, you've learned almost all the basics of FRC programming! The final step before putting it into practice is learning more about [constants](https://github.com/Team2530/Documentation/wiki/Constants).
+If you've made it this far, you've learned almost all the basics of FRC programming! The final step before putting it into practice is learning more about [constants](https://team2530.github.io/Documentation/programming/basics/07-Constants/).

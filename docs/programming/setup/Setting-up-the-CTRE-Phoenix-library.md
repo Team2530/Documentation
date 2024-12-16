@@ -6,7 +6,7 @@ layout: default
 
 # Setting up the CTRE Phoenix library
 
-The CTRE Phoenix library is required to program our CTRE motors. In this article, we'll focus on the library, but the installer also comes with Phoenix Tuner, which is explained [here](https://github.com/Team2530/Documentation/wiki/Phoenix-Tuner-Use).
+The CTRE Phoenix library is required to program our CTRE motors. In this article, we'll focus on the library, but the installer also comes with Phoenix Tuner, which is explained [here](https://team2530.github.io/Documentation/electronics/Phoenix-Tuner-Use/).
 
 ## Computer installation
 CTRE Phoenix Framework only supports Windows, macOS, and Linux. If you're using a Chromebook or another device, you can still edit code, but you won't be able to build and deploy to the robot.
@@ -29,4 +29,4 @@ If, for whatever reason, you don't see "CTRE-Phoenix" in the list, first make su
 
 ***
 
-Learn how to program motors with the library in the [Programming motors](https://github.com/Team2530/Documentation/wiki/Programming-motors) article.
+Learn how to program motors with the library in the [Programming motors](https://team2530.github.io/Documentation/programming/basics/Programming-motors/) article.

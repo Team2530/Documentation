@@ -23,4 +23,4 @@ Alternatively, you can just import all of the constants right away by typing `im
 
 ***
 
-If you've read every article up to this point, you've learned the basics of FRC programming! All that's left is putting it into practice with specific components of the robot. Get started by learning about [programming motors](https://github.com/Team2530/Documentation/wiki/Programming-motors). For any components not documented in this wiki, you should be able to figure out how to program them by either looking at current/previous years' programming of them or looking up the official documentation.
+If you've read every article up to this point, you've learned the basics of FRC programming! All that's left is putting it into practice with specific components of the robot. Get started by learning about [programming motors](https://team2530.github.io/Documentation/programming/basics/Programming-motors/). For any components not documented in this wiki, you should be able to figure out how to program them by either looking at current/previous years' programming of them or looking up the official documentation.

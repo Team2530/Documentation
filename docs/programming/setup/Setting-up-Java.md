@@ -6,7 +6,7 @@ layout: default
 
 # (Deprecated) Setting up Java
 
-### THIS ARTICLE IS DEPRECIATED. You no longer need to manually install Java, as it is bundled with the [WPILib VSCode installation](https://github.com/Team2530/Documentation/wiki/Setting-up-VSCode).
+### THIS ARTICLE IS DEPRECATED. You no longer need to manually install Java, as it is bundled with the [WPILib VSCode installation](https://github.com/Team2530/Documentation/wiki/Setting-up-VSCode).
 
 ***
 

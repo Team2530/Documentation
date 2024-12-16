@@ -6,7 +6,7 @@ layout: default
 # Phoenix Tuner Use
 Phoenix Tuner is a pretty simple piece of software. It's mostly automatic.
 
-You'll need to [install the CTRE Phoenix Framework](https://github.com/Team2530/Documentation/wiki/Setting-up-CTRE-Phoenix-Framework) to get Phoenix Tuner.
+You'll need to [install the CTRE Phoenix Framework](https://team2530.github.io/Documentation/programming/setup/Setting-up-the-CTRE-Phoenix-library/) to get Phoenix Tuner.
 
 ## Initial Setup (Robot)
 

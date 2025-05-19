@@ -1,4 +1,5 @@
 site_name: Inconceivable Documentation
+docs_dir: "."
 theme: 
   name: material
   palette:
@@ -27,6 +28,7 @@ extra_css:
 plugins:
   - search
   - tags
+  - ezlinks
 markdown_extensions: 
   - admonition
   - pymdownx.details

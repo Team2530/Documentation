@@ -12,20 +12,20 @@ For the most part, you shouldn't need to interact much with Gradle's command lin
 
 This file is written in a language called [[Groovy]], which is a superset[^1] of [[Java]].
 
-This document is taken from our [2024 season robot code](https://github.com/Team2530/RobotCode2024/blob/main/build.gradle) and has been annotated with explanations of everything.
+This document is taken from our [2024 season robot code](https://github.com/Team2530/RobotCode2024/blob/main/build.gradle) and has been annotated with explanations of everything. Click on the plus signs to read the annotations.
 
 ```groovy title="build.gradle"
-plugins {
+plugins /* (1) */ {
     id "java"
-    id "edu.wpi.first.GradleRIO" version "2024.1.1" // (1)
+    id "edu.wpi.first.GradleRIO" version "2024.1.1" // (2)
 }
 
-java {
+java { // (3)
     sourceCompatibility = JavaVersion.VERSION_17
     targetCompatibility = JavaVersion.VERSION_17
 }
 
-def ROBOT_MAIN_CLASS = "frc.robot.Main"
+def ROBOT_MAIN_CLASS = "frc.robot.Main" // (4)
 
 // Define my targets (RoboRIO) and artifacts (deployable files)
 // This is added by GradleRIO's backing project DeployUtils.
@@ -66,7 +66,7 @@ def includeDesktopSupport = false
 
 // Defining my dependencies. In this case, WPILib (+ friends), and vendor libraries.
 // Also defines JUnit 5.
-dependencies {
+dependencies /* (5) */ {
     implementation wpi.java.deps.wpilib()
     implementation wpi.java.vendor.java()
 
@@ -115,13 +115,22 @@ tasks.withType(JavaCompile) {
 }
 ```
 
-1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
-    text__, images, ... basically anything that can be written in Markdown.
+1.  This block, aptly named `plugins`, lists some [Gradle Plugins](https://docs.gradle.org/current/userguide/plugins.html) that the robot code project uses.
+2.  This line adds the [GradleRIO plugin](https://github.com/wpilibsuite/GradleRIO), which is used to simplify the build script.
+3.  This section can contain settings and options that are part of Java. Right now, it is only being used to set the source (input) and target (output) compatibility to support Java 17.
+4.  This specifies the main class of our robot code. Please don't ever change this, as doing so will cause build failures.
+5.  This is typically where a Gradle project would list all of its libraries that it uses. We don't do it this way because of [[WPILib]]'s VendorDeps system, but we could add things here if we wanted to.
 
 [^1]: It is a version of the Java programming language with some added features. They look very different though, and the experience of writing them is also different.
 
 ### gradlew, gradlew.bat
 
+These are executable text files written in bash and batch for use on Linux/MacOS and Windows systems, respectively. We don't need to use these when we build our robot code projects because [[WPILib]]'s [[VSCode]] extension does it for us when you ask it to Build your robot code.
+
 ### settings.gradle
 
+This is another file written in Groovy that allows you to configure project settings. You shouldn't ever need to use it.
+
 ### gradle/wrapper
+
+This folder contains the jar file for Gradle--the actual code that the `gradlew` and `gradlew.bat` runs. There shouldn't ever be a need to modify these manually.

@@ -14,10 +14,10 @@ This file is written in a language called [[Groovy]], which is a superset[^1] of
 
 This document is taken from our [2024 season robot code](https://github.com/Team2530/RobotCode2024/blob/main/build.gradle) and has been annotated with explanations of everything.
 
-```gradle title="build.gradle"
+```groovy title="build.gradle"
 plugins {
     id "java"
-    id "edu.wpi.first.GradleRIO" version "2024.1.1" /* (1)! */
+    id "edu.wpi.first.GradleRIO" version "2024.1.1" // (1)
 }
 
 java {
@@ -115,7 +115,8 @@ tasks.withType(JavaCompile) {
 }
 ```
 
-1. A test annotation
+1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
+    text__, images, ... basically anything that can be written in Markdown.
 
 [^1]: It is a version of the Java programming language with some added features. They look very different though, and the experience of writing them is also different.
 

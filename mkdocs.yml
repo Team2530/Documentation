@@ -28,6 +28,7 @@ extra_css:
 plugins:
   - search
   - tags
+  - ezlinks
 markdown_extensions: 
   - admonition
   - pymdownx.details

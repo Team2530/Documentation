@@ -22,6 +22,7 @@ theme:
     - search.share
     - content.code.copy
     - content.code.select
+    - content.code.annotate
 extra_css:
   - style.css
 plugins:

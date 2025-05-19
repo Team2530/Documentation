@@ -1,4 +1,4 @@
-# Documentation Improvement Outline
+# Outline
 
 This is only a draft of the outline.
 

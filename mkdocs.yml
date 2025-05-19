@@ -1,4 +1,5 @@
 site_name: Inconceivable Documentation
+docs_dir: "."
 theme: 
   name: material
   palette:

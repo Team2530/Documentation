@@ -125,3 +125,5 @@ These should be ordered lists of pages that include things people should know. T
 ## Other notes
 
 - It would be very nice if the documentation website could support dynamic wikilinks to any of the pages.
+- Ideally the documentation would be available at docs.frcteam2530.org instead of the obscure github pages url.
+- FMEA can be added too.

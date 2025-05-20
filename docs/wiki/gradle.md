@@ -15,17 +15,17 @@ This file is written in a language called [[Groovy]], which is a superset[^1] of
 This document is taken from our [2024 season robot code](https://github.com/Team2530/RobotCode2024/blob/main/build.gradle) and has been annotated with explanations of everything. Click on the plus signs to read the annotations.
 
 ```groovy title="build.gradle"
-plugins /* (1) */ {
+plugins /* (1)! */ {
     id "java"
-    id "edu.wpi.first.GradleRIO" version "2024.1.1" // (2)
+    id "edu.wpi.first.GradleRIO" version "2024.1.1" // (2)!
 }
 
-java { // (3)
+java { // (3)!
     sourceCompatibility = JavaVersion.VERSION_17
     targetCompatibility = JavaVersion.VERSION_17
 }
 
-def ROBOT_MAIN_CLASS = "frc.robot.Main" // (4)
+def ROBOT_MAIN_CLASS = "frc.robot.Main" // (4)!
 
 // Define my targets (RoboRIO) and artifacts (deployable files)
 // This is added by GradleRIO's backing project DeployUtils.
@@ -66,7 +66,7 @@ def includeDesktopSupport = false
 
 // Defining my dependencies. In this case, WPILib (+ friends), and vendor libraries.
 // Also defines JUnit 5.
-dependencies /* (5) */ {
+dependencies /* (5)! */ {
     implementation wpi.java.deps.wpilib()
     implementation wpi.java.vendor.java()
 
@@ -121,7 +121,7 @@ tasks.withType(JavaCompile) {
 4.  This specifies the main class of our robot code. Please don't ever change this, as doing so will cause build failures.
 5.  This is typically where a Gradle project would list all of its libraries that it uses. We don't do it this way because of [[WPILib]]'s VendorDeps system, but we could add things here if we wanted to.
 
-[^1]: It is a version of the Java programming language with some added features. They look very different though, and the experience of writing them is also different.
+[^1]: It is a version of the Java programming language with some added features. They look very different though, and the experience of writing them is also different. To learn more about it, check out the [official groovy website](https://groovy-lang.org/) and [documentation](https://groovy-lang.org/documentation.html).
 
 ### gradlew, gradlew.bat
 

@@ -44,3 +44,4 @@ I don't know how we did bumpers this year. I will try to get more information so
 ## Links
 
 - [Onshape CAD Model](https://cad.onshape.com/documents/fa9a0365dfdf7e376f93f1b4/w/36bfb0cc9de95ef5933791e3/e/700ba3cf920578fe61d3ec24)
+- [2025 Technical Manual](https://docs.google.com/presentation/d/1bto5VCYEVELLXvQ6iPSqBrLyz7rDSPktWtszlaASRLY/edit?usp=sharing)

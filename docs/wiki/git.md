@@ -5,3 +5,4 @@ A system for tracking the changes between different versions of code. Think of i
 ## Further Reading
 
 - https://nfarina.com/post/9868516270/git-is-simpler
+- https://maryrosecook.com/blog/post/git-from-the-inside-out#fn:1

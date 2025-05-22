@@ -42,6 +42,14 @@ These components were used for the brackets and mounts:
 
 ### Elevator
 
+Our robot has a 2-stage elevator with an arm/wrist mechanism on the top. The elevator is made of 1/16” 2x1 box tubes. It uses a [Billet Elevator Bearing Block] by [[Swerve Drive Specialties|SDS]] for the bearing, and [Dyneema rope](https://www.dyneema.com/) and #25 roller chain. The elevator is driven by Kraken motors, and there are constant force springs that cancel weight to allow it to accelerate quickly.
+
+!!! todo "explain what the dyneema rope and #25 roller chain are used for." 
+
+!!! todo "annotate the photo of the elevator, and add a photo of the elevator when it is extended"
+
+!!! todo "try to add a wikilink or footnote for an explanation of how constant force springs are used here"
+
 ![A CAD render of the Elevator](../assets/images/shrieking-eel-elevator.png)
 
 ### Arm and Wrist

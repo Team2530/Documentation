@@ -8,7 +8,7 @@ The Shrieking Eel was our robot for the 2024-25 season [[Reefscape]].
 
 ### Frame and Drivetrain
 
-The Eel is a [[Swerve Drive]] robot. We used Mk4i modules with an L2 gearing in order to accelerate quickly for short cycles. The motors are [[Kraken x60]]s, and it is steered by [[NEO 1.1]]s. We 3D-printed wheel well guards to protect the drive train from dirt and debris. The wheels are [Black Neoprene Billet wheels](https://www.swervedrivespecialties.com/products/billet-wheel-4d-x-1-5w-bearing-bore) from [[Swerve Drive Specialties]], with an outside diameter (OD) of 4" and a width of 1.5". We use [[CANCoders]] to measure the absolute rotation of the wheels.
+The Eel is a [[Swerve Drive]] robot. We use Mk4i modules with an L2 gearing in order to accelerate quickly for short cycle times. The motors are [[Kraken x60]]s, and it is steered by [[NEO 1.1]]s. We 3D-printed wheel well guards to protect the drive train from dirt and debris. The wheels are [Black Neoprene Billet wheels](https://www.swervedrivespecialties.com/products/billet-wheel-4d-x-1-5w-bearing-bore) from [[Swerve Drive Specialties]], with an outside diameter (OD) of 4" and a width of 1.5". We use [[CANCoders]] to measure the absolute rotation of the wheels.
 
 ![A view of a single swerve module](../assets/images/shrieking-eel-swerve-module.png)
 

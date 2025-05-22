@@ -27,7 +27,7 @@ Each set of bumpers (4 pieces in total, 2 red and 2 blue) takes the form of two 
 
 !!! warning "Not finished"
 
-    This section is a work in progress. An exploded view would be very nice.
+    This section is a work in progress. An exploded view would be very nice, and it has been said that the backer components might not be made out of oak plywood anymore due to weight reduction.
 
 Backer components are made of oak plywood, and have a height of 5in and a thickness of 0.7 inches.
 
@@ -35,12 +35,11 @@ The foam has two layers instead of three for shock reduction and simplicity. The
 
 The red/blue cloth covers on the bumpers are made of Seattle Fabrics' 1000D Cordura Nylon. The numbers "2530" were printed as vinyl stickers. Comic sans was chosen as a font after a short survey.
 
-These components were used for the brackets and mounts:
-- Corner Brackets:  2 inch Aluminum L channel 2-inch bracket
+These components were used for the brackets and mounts:  
+
+- Corner Brackets: 2" Aluminum L channel 2" bracket
 - Plummer Industries Vertical Mounts for frame attachment
 - Through bolt X 2 through the 80/20 frame on each long side of U bumper for stabilization
-
-
 
 ### Elevator
 

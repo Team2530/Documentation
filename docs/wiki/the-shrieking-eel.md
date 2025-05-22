@@ -8,12 +8,11 @@ The Shrieking Eel was our robot for the 2024-25 season [[Reefscape]].
 
 ### Frame and Drivetrain
 
-The Eel is a [[Swerve Drive]] robot. We used Mk4I modules with an L2 gearing in order to accelerate quickly for short cycles. The motors are [[Kraken x60]]s, and it is steered by [[NEO 1.1]]s. We 3D-printed wheel well guards to protect the drive train from dirt and debris.
-
+The Eel is a [[Swerve Drive]] robot. We used Mk4i modules with an L2 gearing in order to accelerate quickly for short cycles. The motors are [[Kraken x60]]s, and it is steered by [[NEO 1.1]]s. We 3D-printed wheel well guards to protect the drive train from dirt and debris. The wheels are [Black Neoprene Billet wheels](https://www.swervedrivespecialties.com/products/billet-wheel-4d-x-1-5w-bearing-bore) from [[Swerve Drive Specialties]], with an outside diameter (OD) of 4" and a width of 1.5". We use [[CANCoders]] to measure the absolute rotation of the wheels.
 
 ![A view of a single swerve module](../assets/images/shrieking-eel-swerve-module.png)
 
-The frame perimeter is 29.5"x29.5". This provides a large wheelbase for stability. The baseplate is low, and this prevents bumps on the field and lowers the risk of high-centering[^1] on algae gamepieces. The rails on the frame are made of [[80/20 #1020]], with aluminum blocks to lower the [[Center of Gravity|CG]]. The baseplate of the frame is made of 3mm polycarbonate instead of HDPE for weight reasons, inspectability and frame rigidity. [[Eye bolts]] were added in the drop blocks to add carrying straps.
+The frame perimeter is 29.5"x29.5". The baseplate is made of 3mm polycarbonate instead of HDPE for weight reasons, inspectability and frame rigidity. It is dropped by 0.75" with a aluminum blocks between the swerve module plate and the frame. Lowering the baseplate prevents bumps on the field and also reduces the risk of high-centering[^1] on algae gamepieces. The rails on the frame are made of [[80/20 #1020]], with aluminum blocks to lower the [[Center of Gravity|CG]]. [[Eye bolts]] were added in the drop blocks to add carrying straps.
 
 ![A top-down view of the drivetrain](../assets/images/shrieking-eel-drive-train.png)
 

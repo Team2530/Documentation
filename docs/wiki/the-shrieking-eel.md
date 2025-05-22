@@ -8,7 +8,7 @@ The Shrieking Eel was our robot for the 2024-25 season [[Reefscape]].
 
 ### Frame and Drivetrain
 
-The Eel is a [[Swerve Drive]] robot. We use Mk4i modules with an L2 gearing in order to accelerate quickly for short cycle times. The motors are [[Kraken x60]]s, and it is steered by [[NEO 1.1]] motors. We 3D-printed wheel well guards to protect the drive train from dirt and debris. The wheels are [Black Neoprene Billet wheels](https://www.swervedrivespecialties.com/products/billet-wheel-4d-x-1-5w-bearing-bore) from [[Swerve Drive Specialties]], with an outside diameter (OD) of 4" and a width of 1.5". We use [[CANCoder]]s to measure the absolute rotation of the wheels.
+The Eel is a [[Swerve Drive]] robot. We use Mk4i modules with an L2 gearing in order to accelerate quickly for short cycle times. The drive motors are [[Kraken x60]]s, and the steering motors are [[NEO 1.1]]s. We 3D-printed wheel well guards to protect the drive train from dirt and debris. The wheels are [Black Neoprene Billet wheels](https://www.swervedrivespecialties.com/products/billet-wheel-4d-x-1-5w-bearing-bore) from [[Swerve Drive Specialties]], with an outside diameter (OD) of 4" and a width of 1.5". We use [[CANCoder]]s to measure the absolute rotation of the wheels.
 
 ![A view of a single swerve module](../assets/images/shrieking-eel-swerve-module.png)
 
@@ -52,7 +52,19 @@ Our robot has a 2-stage elevator with an arm/wrist mechanism on the top. The ele
 
 ![A CAD render of the Elevator](../assets/images/shrieking-eel-elevator.png)
 
-### Arm and Wrist
+### Arm
+
+The arm is attached by a joint to the second stage of the elevator. A [[NEO Vortex]] controls that joint, with a [[MAXPlanetary Gearbox]] with a ratio of 96:1.
+
+![A CAD render of the joint connecting the arm to the elevator](../assets/images/shreiking-eel-arm-joint.png)
+
+The arm itself is made of 2x2 [[MAXTube]] from [[REV]].
+
+### Wrist
+
+At the end of the arm, there is a wrist with 2 [[Degrees of Freedom|DOF]] (pitch and roll). It is powered by two [[Neo 550]]s. One of the motors is located further back on the arm and controls the roll of the wrist, and the other is on the wrist and controls the pitch.
+
+![A CAD render of the wrist](../assets/images/shrieking-eel-wrist.png)
 
 ### Coral Manipulator
 

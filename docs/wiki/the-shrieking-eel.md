@@ -106,7 +106,43 @@ There are two sponsor boards on the robot.
 
 ### Electronics
 
+!!! failure "We don't have electronics documentation"
+
+    If you see this, please talk to Luke. He says there was a sheet of paper in the shop with our electrical layout, but it has been lost.
+
+    Any information at all on our electrical design would be appreciated. Please add it if you know something.
+
 ### Vision System
+
+The Shrieking Eel has an impressive vision system this year. It features three [[Limelight#Limelight 4|Limelight 4's]] for reading [[Apriltag|apriltags]] on the field and doing pose-estimation, a time-of-flight depth camera for precise aiming when scoring coral, and a 360 camera for recording every angle of matches.
+
+!!! todo "That other camera"
+
+    There is another camera on the robot, but it isn't technically used for the vision system. should it be added here or not?
+
+#### Limelights
+
+!!! todo "TODO: Add more details"
+
+There are three [[Limelight#Limelight 4|limelight 4's]] on the robot. 
+
+Link to cropping method: <https://github.com/Team2530/RobotCode2025/blob/1598b280134871187481bdb6dd90db7fc00f7f44/src/main/java/frc/robot/subsystems/Limelight.java#L71>
+
+#### Depth Camera
+
+!!! todo "TODO: Depth camera information"
+
+![](../assets/images/shrieking-eel-depth-camera.png)
+
+The time of flight camera was featured in a facebook post by FIRST Updates Now:
+
+<iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F664317249562039%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+
+#### 360 Camera
+
+!!! todo "TODO: Add information on 360 camera"
+
+!!! todo "TODO: Add a clip from the 360 camera"
 
 ## Links
 

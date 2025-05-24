@@ -56,7 +56,7 @@ Our robot has a 2-stage elevator with an arm/wrist mechanism on the top. The ele
 
 The arm is attached by a joint to the second stage of the elevator. A [[NEO Vortex]] controls that joint, with a [[MAXPlanetary Gearbox]] with a ratio of 96:1.
 
-![A CAD render of the joint connecting the arm to the elevator](../assets/images/shreiking-eel-arm-joint.png)
+![A CAD render of the joint connecting the arm to the elevator](../assets/images/shrieking-eel-arm-joint.png)
 
 The arm itself is made of 2x2 [[MAXTube]] from [[REV]].
 
@@ -67,6 +67,10 @@ At the end of the arm, there is a wrist with 2 [[Degrees of Freedom|DOF]] (pitch
 ![A CAD render of the wrist](../assets/images/shrieking-eel-wrist.png)
 
 ### Coral Manipulator
+
+The coral manipulator is mounted to the end of the wrist. It is shaped like a dust pan and uses two sets of compliant wheels powered by a [[Falcon 500]]. The wheels grip the inside of a coral gamepiece against the dustpan to intake it, and can be reversed to release the coral over the reef.
+
+![A CAD render of the coral manipulator](../assets/images/shrieking-eel-coral-intake.png)
 
 ### Climber
 

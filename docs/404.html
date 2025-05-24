@@ -9,8 +9,15 @@ This 404 page overrides the default one from mkdocs-material
 
 <!-- Content -->
 {% block content %}
-  <h1>404 - Not found</h1>
+  <h1>Page Not found</h1>
+
   <p>
-    The page "{{page.url|url}}" does not exist! Please create it by contributing.
+  The page "<span id="404-name"></span>" does not exist! Please create it by contributing.
   </p>
+
+  <script>
+    var pathName = new String(window.location);
+    pathName = pathName.replace(/^.*\//, "");
+    document.getElementById("404-name").innerText = pathName;
+  </script>
 {% endblock %}

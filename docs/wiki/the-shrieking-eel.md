@@ -84,7 +84,25 @@ The algae manipulator can intake from the reef and the lollipops (ice cream cone
 
 ![A clip of our algae manipulator](https://youtu.be/OwTRkRwbCP8?si=_jme34bznuZG-nPF&t=24)
 
-### Sponsor Boards
+### Robot Aesthetics
+
+The Shrieking Eel has a number of aesthetic elements. 
+
+![](../assets/images/shrieking-eel-art-cover.png)
+
+#### Electronics Cover
+
+![Explanation of the artistic inspiration for the Electronics cover](../assets/images/shrieking-eel-electronics-cover.png)
+
+#### Sponsor Boards
+
+There are two sponsor boards on the robot.
+
+![Photo of sponsor board](../assets/images/shrieking-eel-sponsor-board.png)
+
+#### Eel Stickers
+
+![Photo of Eel stickers](../assets/images/shrieking-eel-eel-stickers.png)
 
 ### Electronics
 

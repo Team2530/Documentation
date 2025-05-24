@@ -72,11 +72,17 @@ The coral manipulator is mounted to the end of the wrist. It is shaped like a du
 
 ### Climber
 
-The Shrieking Eel has a two-bar climber design. It uses the bars to rotate the cage and then latches around the cage. There is an active arm powered by a [[NEO Vortex]], a
+The Shrieking Eel has a two-bar climber design. It uses the bars to rotate the cage and then latches around the cage. One bar is powered by a [[NEO Vortex]], and the other is not controlled.
 
 ![A CAD render of the climber](../assets/images/shrieking-eel-climber.png)
 
-### Algae Manipulators
+### Algae Manipulator
+
+The Eel has an algae manipulator attached to the elevator. It is made out of two plates of [[MAXComposite]], and folds out on a rotation sprocket. There are two compliant wheels that roll algae in/out of the manipulator. It is powered by two [[NEO 550]]s, one of which is used to control the algae manipulator arm and the other spins the wheels.
+
+The algae manipulator can intake from the reef and the lollipops (ice cream cones? The algae game pieces stacked on coral at the start of the game). It can score algae in the processor and in the barge.
+
+![A clip of our algae manipulator](https://youtu.be/OwTRkRwbCP8?si=_jme34bznuZG-nPF&t=24)
 
 ### Sponsor Boards
 

@@ -134,6 +134,8 @@ There are three [[Limelight#Limelight 4|limelight 4's]] on the robot.
 
 ![](../assets/images/shrieking-eel-limelight-coverage.png)
 
+Note that the frustums shown in the image extend much further than the image suggests.
+
 Link to cropping method: <https://github.com/Team2530/RobotCode2025/blob/1598b280134871187481bdb6dd90db7fc00f7f44/src/main/java/frc/robot/subsystems/Limelight.java#L71>
 
 #### Depth Camera
@@ -152,9 +154,13 @@ The time of flight camera was featured in a facebook post by FIRST Updates Now:
 
 #### 360 Camera
 
-!!! todo "TODO: Add information on 360 camera"
+This is the first year that our team has built a robot with a 360 camera on it. The Shrieking Eel has a [[Insta360]] mounted at the base of the arm.
 
-!!! todo "TODO: Add a clip from the 360 camera"
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LslbrXiZlJY?si=-a2ZvpYGSXh3skN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+!!! todo "More videos will be added soon"
+
+    We recorded a lot of matches with the Insta360 and they will be here soon.
 
 ## Links
 

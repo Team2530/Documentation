@@ -50,8 +50,6 @@ Our robot has a 2-stage cascade elevator with an arm/wrist mechanism on the top.
 
 ![A CAD render of the Elevator](../assets/images/shrieking-eel-elevator.png)
 
-
-
 ### Arm
 
 The arm is attached by a joint to the second stage of the elevator. A [[NEO Vortex]] controls that joint, with a [[MAXPlanetary Gearbox]] and some other gears with an overall reduction of 96:1.
@@ -73,6 +71,10 @@ The coral manipulator is mounted to the end of the wrist. It is shaped like a du
 ![A CAD render of the coral manipulator](../assets/images/shrieking-eel-coral-intake.png)
 
 ### Climber
+
+The Shrieking Eel has a two-bar climber design. It uses the bars to rotate the cage and then latches around the cage. There is an active arm powered by a [[NEO Vortex]], a
+
+![A CAD render of the climber](../assets/images/shrieking-eel-climber.png)
 
 ### Algae Manipulators
 

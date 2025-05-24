@@ -128,7 +128,11 @@ The Shrieking Eel has an impressive vision system this year. It features three [
 
 !!! todo "TODO: Add more details"
 
-There are three [[Limelight#Limelight 4|limelight 4's]] on the robot. 
+There are three [[Limelight#Limelight 4|limelight 4's]] on the robot.
+
+##### Coverage
+
+![](../assets/images/shrieking-eel-limelight-coverage.png)
 
 Link to cropping method: <https://github.com/Team2530/RobotCode2025/blob/1598b280134871187481bdb6dd90db7fc00f7f44/src/main/java/frc/robot/subsystems/Limelight.java#L71>
 

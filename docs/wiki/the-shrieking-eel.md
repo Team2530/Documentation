@@ -12,6 +12,8 @@ The Eel is a [[Swerve Drive]] robot. We use Mk4i modules with an L2 gearing in o
 
 ![A view of a single swerve module](../assets/images/shrieking-eel-swerve-module.png)
 
+![SDS Black Neoprene Billet Wheel](../assets/images/sds-billet-wheels.png)
+
 The frame perimeter is 29.5"x29.5". The baseplate is made of 3mm polycarbonate instead of HDPE for weight reasons, inspectability and frame rigidity. It is dropped by 0.75" with a aluminum blocks between the swerve module plate and the frame. Lowering the baseplate prevents bumps on the field and also reduces the risk of high-centering[^1] on algae gamepieces. The rails on the frame are made of [[8020|80/20]] #1020, with aluminum blocks to lower the [[Center of Gravity|CG]]. [[Eye bolts]] were added in the drop blocks to add carrying straps.
 
 ![A top-down view of the drivetrain](../assets/images/shrieking-eel-drive-train.png)
@@ -42,7 +44,7 @@ These components were used for the brackets and mounts:
 
 ### Elevator
 
-Our robot has a 2-stage elevator with an arm/wrist mechanism on the top. The elevator is made of 1/16” 2x1 box tubes. It uses a [Billet Elevator Bearing Block](https://www.swervedrivespecialties.com/products/billet-elevator-bearing-block) by [[Swerve Drive Specialties|SDS]] for the bearing, and [Dyneema rope](https://www.dyneema.com/) and #25 roller chain. The elevator is driven by Kraken motors, and there are constant force springs that cancel weight to allow it to accelerate quickly.
+Our robot has a 2-stage cascade elevator with an arm/wrist mechanism on the top. The elevator is made of 1/16” thick 2x1 box tubes. It uses a [Billet Elevator Bearing Block](https://www.swervedrivespecialties.com/products/billet-elevator-bearing-block) by [[Swerve Drive Specialties|SDS]] for the bearing, and the rigging is #25 roller chain for the first stage and [[Dyneema rope]] from [[Thriftybot]] for the second. The elevator is driven by Kraken motors, and there are constant force springs that cancel some of the weight to allow it to accelerate quickly.
 
 !!! todo "explain what the dyneema rope and #25 roller chain are used for." 
 
@@ -54,7 +56,7 @@ Our robot has a 2-stage elevator with an arm/wrist mechanism on the top. The ele
 
 ### Arm
 
-The arm is attached by a joint to the second stage of the elevator. A [[NEO Vortex]] controls that joint, with a [[MAXPlanetary Gearbox]] with a ratio of 96:1.
+The arm is attached by a joint to the second stage of the elevator. A [[NEO Vortex]] controls that joint, with a [[MAXPlanetary Gearbox]] and some other gears with an overall reduction of 96:1.
 
 ![A CAD render of the joint connecting the arm to the elevator](../assets/images/shrieking-eel-arm-joint.png)
 

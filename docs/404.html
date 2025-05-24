@@ -11,14 +11,6 @@ This 404 page overrides the default one from mkdocs-material
 {% block content %}
   <h1>404 - Not found</h1>
   <p>
-    The page "
-    
-    {% if page.meta and page.meta.title %}
-        {{page.meta.title}}
-    {% elif page.title %}
-        {{page.title}}
-    {% endif %}
-
-    " does not exist! Please create it by contributing.
+    The page "{{page.url|url}}" does not exist! Please create it by contributing.
   </p>
 {% endblock %}

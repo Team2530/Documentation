@@ -82,7 +82,7 @@ The Eel has an algae manipulator attached to the elevator. It is made out of two
 
 The algae manipulator can intake from the reef and the lollipops (ice cream cones? The algae game pieces stacked on coral at the start of the game). It can score algae in the processor and in the barge.
 
-![A clip of our algae manipulator](https://youtu.be/OwTRkRwbCP8?si=_jme34bznuZG-nPF&t=24)
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OwTRkRwbCP8?si=2z-5-mifz_vIfkhl&amp;start=24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Robot Aesthetics
 

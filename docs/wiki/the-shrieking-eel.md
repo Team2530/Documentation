@@ -14,6 +14,8 @@ The Eel is a [[Swerve Drive]] robot. We use Mk4i modules with an L2 gearing in o
 
 ![SDS Black Neoprene Billet Wheel](../assets/images/sds-billet-wheels.png)
 
+!!! todo "TODO: Replace the image of the Billet wheel"
+
 The frame perimeter is 29.5"x29.5". The baseplate is made of 3mm polycarbonate instead of HDPE for weight reasons, inspectability and frame rigidity. It is dropped by 0.75" with a aluminum blocks between the swerve module plate and the frame. Lowering the baseplate prevents bumps on the field and also reduces the risk of high-centering[^1] on algae gamepieces. The rails on the frame are made of [[8020|80/20]] #1020, with aluminum blocks to lower the [[Center of Gravity|CG]]. [[Eye bolts]] were added in the drop blocks to add carrying straps.
 
 ![A top-down view of the drivetrain](../assets/images/shrieking-eel-drive-train.png)
@@ -88,6 +90,8 @@ The algae manipulator can intake from the reef and the lollipops (ice cream cone
 
 The Shrieking Eel has a number of aesthetic elements. 
 
+!!! todo "TODO: Add more information"
+
 ![](../assets/images/shrieking-eel-art-cover.png)
 
 #### Electronics Cover
@@ -137,6 +141,10 @@ Link to cropping method: <https://github.com/Team2530/RobotCode2025/blob/1598b28
 The time of flight camera was featured in a facebook post by FIRST Updates Now:
 
 <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F664317249562039%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+
+!!! todo "TODO: Show a video that more accurately depicts the depth camera"
+
+    The First updates now clip doesn't actually show the depth camera aim correction in action (although they did record it), so we should add something to demonstrate it.
 
 #### 360 Camera
 

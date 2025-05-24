@@ -2,6 +2,7 @@ site_name: Inconceivable Documentation
 site_url: https://team2530.github.io/Documentation/
 theme: 
   name: material
+  custom_dir: docs
   palette:
     scheme: default
     primary: custom

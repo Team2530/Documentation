@@ -1,3 +1,8 @@
+---
+tags:
+  - Programming
+---
+
 # VSCode
 
 VSCode ([[VSCode|Visual Studio Code]], not to be confused with [[Visual Studio]]) is an [[IDE]] created by Microsoft.

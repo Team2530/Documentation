@@ -1,3 +1,8 @@
+---
+tags:
+  - Programming
+---
+
 # WPILib
 
 WPILib is a software library for [[FRC]] robot code development. It supports [[Java]], [[C++]] and [[Python]].

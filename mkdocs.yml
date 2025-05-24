@@ -15,16 +15,23 @@ theme:
     - navigation.instant
     - navigation.instant.progress
     - navigation.tracking
-    - navigation.sections
     - navigation.expand
-    - navigation.path
     - navigation.prune
     - navigation.top
+    - navigation.indexes
     - search.suggest
     - search.share
     - content.code.copy
     - content.code.select
     - content.code.annotate
+    - toc.follow
+extra:
+  tags:
+    Programming: computer
+    Electronics: bolt
+    CAD: rainy
+    Strategy: strategy
+    Machining: tools_power_drill
 extra_css:
   - style.css
 plugins:

@@ -1,3 +1,8 @@
+---
+tags:
+  - Programming
+---
+
 # Visual Studio
 
 !!! warn "This is not the IDE you are looking for"

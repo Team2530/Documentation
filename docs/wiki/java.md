@@ -1,3 +1,8 @@
+---
+tags:
+  - Programming
+---
+
 # Java
 
 !!! tip "Java is not Javascript"

@@ -1,3 +1,8 @@
+---
+tags:
+  - Programming
+---
+
 # CLI
 
 **CLI** stands for **C**ommand-**L**ine **I**nterface. As its name imples, it is a system that allows humans to interface with computer programs by issuing commands.

@@ -1,3 +1,8 @@
+---
+tags:
+  - Programming
+---
+
 # Gradle
 
 Gradle is a tool used to simplify the management of all the vendor dependencies we use in our code.

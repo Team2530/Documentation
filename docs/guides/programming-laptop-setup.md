@@ -1,10 +1,16 @@
 # How to setup a programming laptop
 
+!!! tip "Prerequisite: Windows 10/11"
+
+    This guide assumes that you have Windows 10 or Windows 11 installed on the laptop. It is possible to install some of the tools on Linux and Mac, but NI Game Tools supports Windows exclusively, and it is required to be able to control the robot from a laptop.
+
 ## List of Software to install
 
 | Program Name | Annual Updates needed | Description                                                              | Download Link |
 | ------------ | --------------------- | ------------------------------------------------------------------------ | ------------- |
+| Google Chrome | No | Microsoft Edge is not suitable for programming. Any other browser, like Google Chrome, Firefox or Opera GX will work. | <https://www.google.com/chrome/> |
 | WPILib       | Yes                   | WPILib is a suite of tools for FRC. Includes VSCode and some other gems. | <https://github.com/wpilibsuite/allwpilib/releases> |
+| VSCode Extension Pack for Java | No | This extension by Red Hat has all of the vscode extensions you will need to write code in Java. | Use the extensions tab in VSCode. You can find it by clicking on the icon with four boxes on the left side of the screen or by pressing ++ctrl+shift+x++. |
 | NI Game Tools | Yes | This allows you to connect to the robot. Includes Driver's Station and RoboRIO imaging tool. To download the installer file you need to create a free account. Typically one person on the team will do this and then distribute the files to everyone else. | <https://www.ni.com/en/support/downloads/drivers/download.frc-game-tools.html> |
 | Git for Windows | No | This program contains Git Bash, a tool for interacting with git repositories on the command line. | <https://github.com/git-for-windows/git/releases/tag/v2.49.0.windows.1> |
 | PathPlanner | Yes | PathPlanner is a tool for designing autonomous routes. You should install this from the windows store to get automatic updates. | <https://apps.microsoft.com/detail/9nqbkb5dw909?ocid=webpdpshare> |

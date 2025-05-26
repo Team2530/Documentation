@@ -4,7 +4,7 @@
 
 | Program Name | Annual Updates needed | Description                                                              | Download Link |
 | ------------ | --------------------- | ------------------------------------------------------------------------ | ------------- |
-| WPILib       | Yes                   | WPILib is a suite of tools for FRC. Includes VSCode and some other gems. | <link here> |
+| WPILib       | Yes                   | WPILib is a suite of tools for FRC. Includes VSCode and some other gems. | <https://github.com/wpilibsuite/allwpilib/releases> |
 | NI Game Tools | Yes | This allows you to connect to the robot. Includes Driver's Station and RoboRIO imaging tool. To download the installer file you need to create a free account. Typically one person on the team will do this and then distribute the files to everyone else. | <https://www.ni.com/en/support/downloads/drivers/download.frc-game-tools.html> |
 | Git for Windows | No | This program contains Git Bash, a tool for interacting with git repositories on the command line. | <https://github.com/git-for-windows/git/releases/tag/v2.49.0.windows.1> |
 | PathPlanner | Yes | PathPlanner is a tool for designing autonomous routes. You should install this from the windows store to get automatic updates. | <https://apps.microsoft.com/detail/9nqbkb5dw909?ocid=webpdpshare> |

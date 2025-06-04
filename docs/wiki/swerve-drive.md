@@ -1,6 +1,6 @@
 # Swerve Drive
 
-A type of drive train used in [[FRC]].
+A type of [[Drive Train|drive train]] used in [[FRC]].
 
 ## Further Reading
 

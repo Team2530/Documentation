@@ -4,8 +4,9 @@ This guide explains how to create an [[onshape|Onshape]] account.
 
 ## Instructions
 
-1. Go to 
+1. Go to https://www.onshape.com/en/education/sign-up
 2. Fill out the form
+
 ![[onshape-signup-1.png]]
 3. Answer all the other questions
 ![[onshape-signup-2.png]]

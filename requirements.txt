@@ -1,5 +1,6 @@
 babel==2.17.0
 backrefs==5.8
+beautifulsoup4==4.13.4
 certifi==2025.4.26
 charset-normalizer==3.4.2
 click==8.2.1
@@ -11,6 +12,7 @@ Markdown==3.8
 MarkupSafe==3.0.2
 mergedeep==1.3.4
 mkdocs==1.6.1
+mkdocs-backlinks-section-plugin==0.0.5
 mkdocs-ezlinks-plugin==0.1.14
 mkdocs-get-deps==0.2.0
 mkdocs-material==9.6.14
@@ -27,5 +29,7 @@ PyYAML==6.0.2
 pyyaml_env_tag==1.1
 requests==2.32.3
 six==1.17.0
+soupsieve==2.7
+typing_extensions==4.14.0
 urllib3==2.4.0
 watchdog==6.0.0

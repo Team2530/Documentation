@@ -38,6 +38,7 @@ plugins:
   - search
   - tags
   - ezlinks
+  - backlinks_section
 markdown_extensions: 
   - admonition
   - pymdownx.details

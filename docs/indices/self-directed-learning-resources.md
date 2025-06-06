@@ -1,10 +1,10 @@
 # Index of Resources for self-directed learning
 
-## Collections
+## Other Collections of Resources
 
 - [NASA Robotics Alliance Project Resource Links](https://robotics.nasa.gov/software-engineer/resource-links/)
 
-## By Subteam area
+## By Subteam
 
 ### Programming
 
@@ -13,7 +13,7 @@
 - [WPILib Simulations](https://docs.wpilib.org/en/stable/docs/software/wpilib-tools/robot-simulation/introduction.html)
 
 
-### CAD
+### Design
 
 - <https://www.frcdesign.org/>
 - <https://www.chiefdelphi.com/> CADathon submission and open alliance build threads

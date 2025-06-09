@@ -1,9 +1,5 @@
 # Detecting apriltags with OpenCV and Python
 
-!!! warning "This guide isn't finished yet!"
-
-    It has all the setup instructions, but aside from that has nothing written yet.
-
 This guide will show you how to use [[Python]] and [[OpenCV]] to detect [[Apriltag|Apriltags]].
 
 ## Image sources
@@ -145,9 +141,12 @@ You can detect apriltags in any type of image, or use a camera. For this guide I
     # ...
 
     # Display the image
-    cv2.imshow("image", image)
-    cv2.waitKey()
+    cv2.imshow("image", image) # (1)!
+    cv2.waitKey() # (2)!
     ```
+
+    1. This creates a new window with a name of the first argument ("image") that displays the second argument (an image)
+    2. This waits until the user presses a key. Without this line the image would only be drawn for a few milliseconds on your screen.
 
     If you run the script now, you should see a window with the image.
 
@@ -157,7 +156,7 @@ You can detect apriltags in any type of image, or use a camera. For this guide I
 
     There are at least three channels in the image you just displayed. One for the red contents of the image, one for the blue and one for the green. However, for detecting the apriltag it is much easier to only have a single channel. It is easier for the `apriltag` package to detect the apriltags if there is no color, so we will convert the image to a grayscale one using OpenCV.
 
-    ```python title="main.py" hl_lines="3"
+    ```python title="main.py" hl_lines="3 6"
     # ...
 
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -220,7 +219,7 @@ You can detect apriltags in any type of image, or use a camera. For this guide I
        [573.03771973, 162.69270325]])), ...]
     ```
 
-    This isn't very human readable, but it does give you a lot of information about the apriltags in the image. You can see that it is an array (contained in square brackets) of `Detection`s, which each have a `tag_family`, `tag_id`, `hamming`, `goodness` and `decision_margin` fields. All of these fields are useful. `tag_id` is the ID of the apriltag, and `corners` contains an array of points that mark the corners of the apriltag.
+    This isn't very human-readable, but it does give you a lot of information about the apriltags in the image. You can see that it is an array (contained in square brackets) of `Detection`s, which each have a `tag_family`, `tag_id`, `hamming`, `goodness` and `decision_margin` fields. All of these fields are useful. `tag_id` is the ID of the apriltag, and `corners` contains an array of points that mark the corners of the apriltag.
 
 9. Draw some boxes
 
@@ -261,3 +260,4 @@ You can detect apriltags in any type of image, or use a camera. For this guide I
     - Instead of using a single frame from the webcam, try to make it detect apriltags in real time.
     - Do [[Pose Estimation]] to figure out where the camera is relative to the apriltag
     - Draw more annotations on the original image, such as the tag ID or a circle instead of a box.
+    - The example image used in this guide has apriltags that look easy to detect but are still missed. Figure out why they aren't being detected and then update the program so that it catches them too.

@@ -4,7 +4,7 @@
 
     It has all the setup instructions, but aside from that has nothing written yet.
 
-This guide will show you how to use [[Python]] and [[OpenCV]] to detect [[Apriltags]].
+This guide will show you how to use [[Python]] and [[OpenCV]] to detect [[Apriltag|Apriltags]].
 
 ## Image sources
 

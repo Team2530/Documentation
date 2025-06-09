@@ -14,7 +14,7 @@ The Eel is a [[Swerve Drive]] robot. We use Mk4i modules with an L2 gearing in o
 
 ![SDS Black Neoprene Billet Wheel](../assets/images/sds-billet-wheels.png)
 
-The frame perimeter is 29.5"x29.5". The baseplate is made of 3mm polycarbonate instead of HDPE for weight reasons, inspectability and frame rigidity. It is dropped by 0.75" with a aluminum blocks between the swerve module plate and the frame. Lowering the baseplate prevents bumps on the field and also reduces the risk of high-centering[^1] on algae gamepieces. The rails on the frame are made of [[8020|80/20]] #1020, with aluminum blocks to lower the [[Center of Gravity|CG]]. [[Eye bolts]] were added in the drop blocks to add carrying straps.
+The frame perimeter is 29.5"x29.5". The baseplate is made of 3mm polycarbonate instead of HDPE for weight reasons, inspectability and frame rigidity. It is dropped by 0.75" with a aluminum blocks between the swerve module plate and the frame. Lowering the baseplate prevents bumps on the field and also reduces the risk of high-centering[^1] on algae gamepieces. The rails on the frame are made of [[8020|80/20]] #1020, with aluminum blocks to lower the [[Center of Gravity|CG]]. [[Eye Bolt|Eye bolts]] were added in the drop blocks to add carrying straps.
 
 ![A top-down view of the drivetrain](../assets/images/shrieking-eel-drive-train.png)
 

@@ -1,5 +1,9 @@
 # Apriltag
 
+!!! warning "This page is not finished!"
+
+    If you are a team member and know more about this topic than what is currently here please contribute that information.
+
 Apriltags are square qr-code-like images that encode a very small amount of information. They are sometimes placed in [[FRC]] fields, and can be used for [[Pose Estimation|pose-estimation]] to figure out where the robot is relative to the tags.
 
 ## Families

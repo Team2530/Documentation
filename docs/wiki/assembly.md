@@ -1,5 +1,9 @@
 # Assembly
 
+!!! warning "This page is not finished!"
+
+    If you are a team member and know more about this topic than what is currently here please contribute that information.
+
 !!! warning "Disambiguation"
 
     [Assembly can mean a different thing in Programming](https://en.wikipedia.org/wiki/Assembly_language), this page is about the CAD term.

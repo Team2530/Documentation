@@ -1,10 +1,14 @@
 # Detecting apriltags with OpenCV and Python
 
+!!! warning "This guide isn't finished yet!"
+
+    It has all the setup instructions, but aside from that has nothing written yet.
+
 This guide will show you how to use [[Python]] and [[OpenCV]] to detect [[Apriltags]].
 
 ## Image sources
 
-You can detect apriltags in any type of image, live or not. For this guide I'll use an image from the University of Michigan that includes several apriltags of the 36H11 family.
+You can detect apriltags in any type of image, or use a camera. For this guide I'll use an image from the University of Michigan that includes several apriltags of the 36H11 family.
 
 ![](https://april.eecs.umich.edu/media/apriltag/apriltagrobots_overlay.jpg)
 
@@ -52,7 +56,7 @@ You can detect apriltags in any type of image, live or not. For this guide I'll 
 
         A [Jupyter Lite Notebook](https://jupyter.org/try-jupyter/lab/) might work in the future. Try creating a new notebook with Pyodide and then running this script to install everything you need:
 
-        ```python title="JupyterLite Setup Script" hl_lines="3"
+        ```python title="JupyterLite Setup Script" hl_lines="4"
         import micropip
 
         await micropip.install("opencv-python")

@@ -12,6 +12,9 @@
 - [WPILib "Zero to Robot"](https://docs.wpilib.org/en/stable/docs/zero-to-robot/introduction.html)
 - [WPILib Simulations](https://docs.wpilib.org/en/stable/docs/software/wpilib-tools/robot-simulation/introduction.html)
 
+### Electronics
+
+- <https://media.screensteps.com/exported/Wpilib/2078/376137/Wiring_the_FRC_Control_System.pdf>
 
 ### Design
 

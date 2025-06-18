@@ -29,4 +29,5 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material mkdocs-ezlinks-plugin mkdocs-backlinks-section-plugin
+      - run: echo "docs.frcteam2530.org" > docs/CNAME
       - run: mkdocs gh-deploy --force

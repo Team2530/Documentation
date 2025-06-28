@@ -50,6 +50,8 @@
     
       <link rel="stylesheet" href="../../style.css">
     
+      <link rel="stylesheet" href="../../katex.min.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -3478,34 +3480,34 @@
 <p>EPA (Expected points added) is a statistic developed by <a href="../statbotics" title="Statbotics">Statbotics</a> used to predict how many points a robot is expected to add to a given alliance. It is used eveywhere in our scouting subteam for a baseline of how a team will perform if we haven't seen any of their matches.</p>
 <p>You will almost certainly never need to calculate it by hand or implement it with code. Statbotics has an API that allows easy access to this information.</p>
 <h2 id="k-parameter">K-parameter</h2>
-<p>The K-parameter is a variable used to control how much a team's EPA changes for a given match. Larger values of $K$ will result in bigger EPA changes for every match.</p>
+<p>The K-parameter is a variable used to control how much a team's EPA changes for a given match. Larger values of <span class="arithmatex">\(K\)</span> will result in bigger EPA changes for every match.</p>
 <p>According to the statbotics blog post, it is calculated like this:</p>
-<p>$$
+<div class="arithmatex">\[
 K = \begin{cases} 
-          0.5                     &amp; N \leq 6 \
-          0.5 - \frac{1}{30}(N-6) &amp; 6 \lt N \leq 12 \
+          0.5                     &amp; N \leq 6 \\
+          0.5 - \frac{1}{30}(N-6) &amp; 6 \lt N \leq 12 \\
           0.3                     &amp; N \gt 12 
        \end{cases}
-$$</p>
-<p>Where $N$ is the number of matches that the team has played.</p>
+\]</div>
+<p>Where <span class="arithmatex">\(N\)</span> is the number of matches that the team has played.</p>
 <p><img alt="" src="../../assets/images/epa-k_value.png" /></p>
-<p>As you can see, after 6 matches $K$ will decrease linearly until it is equal to $0.3$.</p>
+<p>As you can see, after 6 matches <span class="arithmatex">\(K\)</span> will decrease linearly until it is equal to <span class="arithmatex">\(0.3\)</span>.</p>
 <h2 id="epa-changes">EPA Changes</h2>
 <p>EPA Changes are something you will likely never need to calculate manually, but it can be interesting to see how the changes are calculated.</p>
 <p>This is the formula for EPA changes:</p>
-<p>$$
+<div class="arithmatex">\[
 \Delta EPA = K \times \frac{1}{1+M} \times ((\text{Red Score} - \text{Red EPA}) - M \times (\text{Blue Score} - \text{Blue EPA}))
-$$</p>
-<p>Where $K$ is the <a href="./#k-parameter">K parameter</a>, and M is the margin parameter.</p>
-<p>$M$ can be calculated like this:</p>
-<p>$$
+\]</div>
+<p>Where <span class="arithmatex">\(K\)</span> is the <a href="./#k-parameter">K parameter</a>, and M is the margin parameter.</p>
+<p><span class="arithmatex">\(M\)</span> can be calculated like this:</p>
+<div class="arithmatex">\[
 M = \begin{cases}
-        0                             &amp; N \le 12 \
-        \frac{1}{24} \times (N - 12)  &amp; 12 \lt N \le 36 \
+        0                             &amp; N \le 12 \\
+        \frac{1}{24} \times (N - 12)  &amp; 12 \lt N \le 36 \\
         1                             &amp; N \gt 36
     \end{cases}
-$$</p>
-<p>(Where $N$ is still the number of matches the team has played)</p>
+\]</div>
+<p>(Where <span class="arithmatex">\(N\)</span> is still the number of matches the team has played)</p>
 <h3 id="component-epas">Component EPAs</h3>
 <blockquote>
 <p>Since 2016, FRC games have been played with three phases: autonomous, teleoperated, and endgame. <a href="../opr" title="OPR">OPR</a> can be separated into auto, teleop, and endgame components, and so naturally, we seek to do the same for <a href="./" title="EPA">EPA</a>. 
@@ -3518,9 +3520,9 @@ $$</p>
 <p>\Delta \text{Endgame EPA} = K \times (\text{Endgame Score} - \text{Endgame EPA})
 $$</p>
 <p>TeleOP EPA is not calculated in this way because it has more alliance interaction, so it is calculated like this:</p>
-<p>$$
+<div class="arithmatex">\[
 \text{TeleOP EPA} = \text{EPA} - \text{Auto EPA} - \text{Endgame EPA}
-$$</p>
+\]</div>
 <h2 id="match-predictions">Match predictions</h2>
 <p>It is possible to predict the outcome of matches purely based on the EPA of each team. </p>
 <h3 id="simple-method">Simple method</h3>
@@ -3638,6 +3640,8 @@ $$</p>
     
     
       <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="../../katex.min.js"></script>
       
     
   </body>

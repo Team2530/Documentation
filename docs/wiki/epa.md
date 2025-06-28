@@ -57,9 +57,10 @@ Here are the formulas used to calculate changes to component EPAs:
 
 $$
 \Delta \text{Auto EPA} = K \times (\text{Auto Score} - \text{Auto EPA})
-
-\\
-
+$$  
+  
+  
+$$
 \Delta \text{Endgame EPA} = K \times (\text{Endgame Score} - \text{Endgame EPA})
 $$
 

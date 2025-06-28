@@ -16,8 +16,8 @@ theme:
   logo: assets/logo.svg # TODO: This logo is the wrong color
   favicon: assets/favicon.ico
   icon:
-    repo: material/brands/github
-    edit: material/pencil
+    repo: fontawesome/brands/github
+    edit: fontawesome/solid/pencil
   features:
     - navigation.instant
     - navigation.instant.progress

@@ -6,7 +6,7 @@
 
 ## Purpose
 
-The purpose of bumpers in FRC is to[^1]:
+The purpose of bumpers in FRC is to:
 
 1. provide consistent well-defined protection for robots during match play,
 2. identify alliance, and
@@ -14,4 +14,4 @@ The purpose of bumpers in FRC is to[^1]:
 
 ## Sources
 
-[^1]: [FRC Bumper Guide](https://www.firstinspires.org/sites/default/files/uploads/resource_library/frc/technical-resources/frc_bumperguide.pdf)
+- [FRC Bumper Guide](https://www.firstinspires.org/sites/default/files/uploads/resource_library/frc/technical-resources/frc_bumperguide.pdf)

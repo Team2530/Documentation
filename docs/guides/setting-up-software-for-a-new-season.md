@@ -1,25 +1,31 @@
-# Setting up for a new season
+# Setting up software for a new season
 
 WPILib releases a new major version of their software every season, and it's important to update our software and migrate to the corresponding year's project after kickoff to avoid various issues.
 
 ## Update WPILib
-**This needs to be done on ALL computers (except Chromebooks) to avoid compatibility issues.**
+
+!!! warning **This needs to be done on ALL computers (except Chromebooks) to avoid compatibility issues.**
 
 Follow the instructions on [this page](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html) to install the latest version of WPILib. Make sure to select the "Everything" mode, "Install for this User," and "Download for this computer only" (or whatever equivalent/similar options appear in future installers.)
-
-***
 
 **The following steps only need to be completed once per season. If the RobotCode20XX repository (with the current year) already exists and has robot code in it, chances are that someone has already done this and you don't need to. All you have to do at this point is clone the new repository to your computer.**
 
 ## Update the RoboRIO
+
 [View the instructions here.](https://team2530.github.io/Documentation/electronics/Updating-the-RoboRIO/)
 
 ## Configure a new project
 
 ## Step 1: Create and clone a new repo
+
 Create a new GitHub repository titled `RobotCode20XX` in our Team 2530 organization. (If you don't have permission, someone else who does will need to do it for you. Or, if you were entrusted with setting everything up, you could probably get someone to give you admin privileges.) Clone this repository onto your computer, preferably somewhere you won't forget.
 
+!!! note "Don't get confused!"
+
+    The `XX` in `RobotCode20XX` should be replaced with numbers so that it matches the current year.
+
 ## Step 2: Create or import a project
+
 **This only needs to be done on ONE computer and then published to GitHub.**
 
 At this point, you need to decide if you want to reuse the previous year's robot code (which is what we usually do) or start an entirely new project. Remember that even if you start an entirely new project, you can still copy as much code as you want from other projects, but it will be more tedious than just importing an old project.

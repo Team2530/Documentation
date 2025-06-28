@@ -8,7 +8,7 @@
 | Swerve Modules | If we are using swerve, there will be four of these. Each has two motors. | |
 | Motors and motor controllers | | |
 | Robot Radio | | |
-| [[Blinky Light]] | | |
+| [[Blinky Light]] | | ![](../assets/images/blinky-light.png) |
 | [[VRM]] | | |
 | [[Battery]] | | |
 | Cameras and vision components | Usually [[Limelight|Limelights]]. | |

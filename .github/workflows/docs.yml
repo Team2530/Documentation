@@ -28,6 +28,6 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material mkdocs-ezlinks-plugin mkdocs-backlinks-section-plugin
+      - run: pip install mkdocs-material mkdocs-ezlinks-plugin mkdocs-backlinks-section-plugin mkdocs-git-revision-date-localized-plugin mkdocs-git-authors-plugin
       - run: echo "docs.frcteam2530.org" > docs/CNAME
       - run: mkdocs gh-deploy --force

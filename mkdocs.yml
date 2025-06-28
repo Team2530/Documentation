@@ -47,6 +47,9 @@ plugins:
   - tags
   - ezlinks
   - backlinks_section
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-authors
 markdown_extensions: 
   - admonition
   - pymdownx.details

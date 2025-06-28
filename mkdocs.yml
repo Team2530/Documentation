@@ -49,7 +49,12 @@ plugins:
   - backlinks_section
   - git-revision-date-localized:
       enable_creation_date: true
-  - git-authors
+  - git-authors:
+    show_contribution: true
+    show_email_address: false
+    href: "https://github.com/{name}"
+    authorship_threshold_percent: 10
+    #TODO: If there are ever duplicate authors, look into using this: <https://timvink.github.io/mkdocs-git-authors-plugin/mailmap.html>
 markdown_extensions: 
   - admonition
   - pymdownx.details

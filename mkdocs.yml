@@ -50,11 +50,10 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
   - git-authors:
-    show_contribution: true
-    show_email_address: false
-    href: "https://github.com/{name}"
-    authorship_threshold_percent: 10
-    #TODO: If there are ever duplicate authors, look into using this: <https://timvink.github.io/mkdocs-git-authors-plugin/mailmap.html>
+      show_contribution: true # Shows the percentage of the file that was written by each author
+      show_email_address: false # Email addresses are usually a weird noreply address due to github.dev
+      authorship_threshold_percent: 10 # Filters the list of contributors to only include those who have contributed >= 10% of the current file.
+      #TODO: If there are ever duplicate authors, look into using this: <https://timvink.github.io/mkdocs-git-authors-plugin/mailmap.html>
 markdown_extensions: 
   - admonition
   - pymdownx.details

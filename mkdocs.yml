@@ -1,5 +1,9 @@
 site_name: Inconceivable Documentation
 site_url: https://team2530.github.io/Documentation/
+
+repo_url: https://github.com/Team2530/Documentation
+edit_uri: https://github.dev/Team2530/Documentation/blob/master/docs/
+
 theme: 
   name: material
   custom_dir: docs

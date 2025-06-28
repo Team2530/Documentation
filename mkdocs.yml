@@ -28,6 +28,7 @@ theme:
     - content.code.copy
     - content.code.select
     - content.code.annotate
+    - content.action.edit
     - toc.follow
 extra:
   tags:

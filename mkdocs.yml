@@ -15,6 +15,9 @@ theme:
     text: Roboto
   logo: assets/logo.svg # TODO: This logo is the wrong color
   favicon: assets/favicon.ico
+  icon:
+    repo: material/brands/github
+    edit: material/pencil
   features:
     - navigation.instant
     - navigation.instant.progress

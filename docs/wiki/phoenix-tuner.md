@@ -1,6 +1,6 @@
 # Phoenix Tuner
 
-Phoenix Tuner is a pretty simple piece of software. It's mostly automatic.
+Phoenix tuner is a program that lets you control CTRE devices. It is a pretty simple piece of software. It's mostly automatic.
 
 You'll need to install the CTRE Phoenix Framework to get Phoenix Tuner.
 

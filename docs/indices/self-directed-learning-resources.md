@@ -27,6 +27,9 @@
 
 - [NASA RAP Project](https://robotics.nasa.gov/downloads/nasarap-rdc-v1.pdf)
 - [Citrus Circuits Fall Workshops](https://www.youtube.com/watch?v=3ShM0scs2Qs&list=PL6j32uphg3L8UfsAFLrFT8rhbMrex9SLR)
+- [Spectrum \(3847)'s Recommended Reading Index](https://spectrum3847.org/recommendedreading/)
+
+    This is a massive list of resources for learning about FRC-related topics.
 
 ## Sources
 

@@ -138,17 +138,33 @@ Link to cropping method: <https://github.com/Team2530/RobotCode2025/blob/1598b28
 
 #### Depth Camera
 
-!!! todo "TODO: Depth camera information"
+This module is only responsible for automatically aiming the end effector towards the closest reefpost when attempting to place coral on the reef.
 
-![](../assets/images/shrieking-eel-depth-camera.png)
+A Raspberry Pi 5 attached to an [Arducam Time of Flight camera](https://www.arducam.com/time-of-flight-camera-for-raspberry-pi.html) (SKU B0410) detected reefposts and published their locations in polar coordinates relative to the camera over network tables. 
+
+The camera was selected for a few reasons:
+1. low cost ($50)
+2. accuracy (down to 2cm)
+3. high tolerance to varying light conditions (operating on a narrow IR band that is rarely found in nature or indoors)
+4. ability to capture sharp details (unlike depth cameras that work by measuring stereo disparity or finding patterns in projected dot patterns)\
+5. high enough frame rate (30fps)
+
+![](../assets/images/shrieking-eel-depth-camera-annotated.png)
+
+Any local minimum along the horizontal plane (running parallel with the floor) and intersecting the optical axis is considered a reefpost. The distance measured at each local minimum is denoised by blurring the depth map. 
+
+L2 algae can sit on this plane too, interfering with reefpost detection by sitting very close to the robot when it places coral on algae. The robot ignores measurements from this sensor if algae is detected (if a "detected reefpost" is suspiciously close to the robot). 
+
+This simple algorithm is fast enough to operate on a single-thread process on the Raspberry Pi without comprimising frame rate. 
+
+A live stream of the depth image from the camera can be served from the Pi to the drive station. The feed is augmented with local minima of each row of the depth image (white lines) and the positions of reef posts that are published to the network tables (green circles). Here's a screen recording of a live-stream of one of our practice matches.
+
+![](../assets/videos/output.mp4)
 
 The time of flight camera was featured in a facebook post by FIRST Updates Now:
 
 <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F664317249562039%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
 
-!!! todo "TODO: Show a video that more accurately depicts the depth camera"
-
-    The First updates now clip doesn't actually show the depth camera aim correction in action (although they did record it), so we should add something to demonstrate it.
 
 #### 360 Camera
 

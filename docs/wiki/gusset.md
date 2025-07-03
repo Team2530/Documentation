@@ -1,9 +1,5 @@
 # Gusset
 
-!!! warning "This page is not finished!"
-
-    If you are a team member and know more about this topic than what is currently here please contribute that information.
-
 A gusset is a reinforcement thingy to strengthen the connections between two tubes.
 
 ## Featurescript

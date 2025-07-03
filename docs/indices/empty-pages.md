@@ -1,0 +1,91 @@
+# Index of empty pages
+
+This is an index of all the empty (or nearly empty) pages in the documentation. 
+
+Empty pages aren't a bad thing, since they can still be linked to. However, it is better to have content in them as well.
+
+
+- [[8020]]
+- [[AdvantageKit]]
+- [[AdvantageScope]]
+- [[Arm]]
+- [[Assembly]] (CAD)
+- [[Battery]]
+- [[Bearing]]
+- [[Blinky Light]]
+- [[Box Tube]]
+- [[Bumpers]]
+- [[Bushing]]
+- [[CAN Bus]]
+- [[CANCoder]]
+- [[Center of Gravity]]
+- [[Charged Up]]
+- [[Climber]]
+- [[Crescendo]]
+- [[CTR Electronics]]
+- [[Degrees of Freedom]]
+- [[Drawing]] (CAD)
+- [[Drive Train]]
+- [[Dyneema Rope]]
+- [[Ethernet]]
+- [[Figma]]
+- [[Game Manual]]
+- [[Impact Award]]
+- [[Insta360]]
+- [[KiriMoto]]
+- [[Kraken x60]]
+- [[Krayon CAD]]
+- [[Main Breaker]]
+- [[MAXComposite]]
+- [[MAXPlanetary Gearbox]]
+- [[MAXTube]]
+- [[MkCAD]]
+- [[Neo 1.1]]
+- [[NEO Vortex]]
+- [[OpenCV]]
+- [[PathPlanner]]
+- [[PDH]] and [[PDP]]
+- [[Pose Estimation]]
+- [[Python]]
+- [[Raspberry Pi]]
+- [[Reefscape]]
+- [[REV Robotics]]
+- [[RevLib]]
+- [[Riffs of Insanity]]
+- [[Robot Radio]]
+- [[Section View]] (CAD)
+- [[Shaft]]
+    - This has a basic description but needs more.
+    - Pictures would be nice. It would be good to mention the shaft generator featurescript.
+- [[Shooter]]
+- [[Sketch]]
+- [[SparkMAX]]
+- [[Swerve Drive Specialties]]
+- [[Team Calendar]]
+- [[Team Website]]
+- [[Thriftybot]]
+- [[USB]]
+- [[VRM]]
+- [[VSCode]]
+- [[VSCodium]]
+- [[West Coast Products]]
+- [[WPILib]]
+
+
+Pages that need more info (these are intentionally not wikilinks):
+- Discord
+- Extrude
+- Falcon 500
+- Gears
+- Git & Github
+- Google Drive
+- IDE
+- Limelight
+- Motor
+- MSHSL
+- NavX
+- Onshape
+- PCM
+- RoboRIO
+- Swerve Drive
+- Turbo Scout

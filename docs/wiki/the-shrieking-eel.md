@@ -142,14 +142,15 @@ This module is only responsible for automatically aiming the end effector toward
 
 A Raspberry Pi 5 attached to an [Arducam Time of Flight camera](https://www.arducam.com/time-of-flight-camera-for-raspberry-pi.html) (SKU B0410) detected reefposts and published their locations in polar coordinates relative to the camera over network tables. 
 
-The camera was selected for a few reasons:
+The camera was selected for a few reasons:  
+
 1. low cost ($50)
 2. accuracy (down to 2cm)
 3. high tolerance to varying light conditions (operating on a narrow IR band that is rarely found in nature or indoors)
 4. ability to capture sharp details (unlike depth cameras that work by measuring stereo disparity or finding patterns in projected dot patterns)\
 5. high enough frame rate (30fps)
 
-![](../assets/images/shrieking-eel-depth-camera-annotated.png)
+![](../assets/images/shrieking-eel-depth-camera-annotated.jpg)
 
 Any local minimum along the horizontal plane (running parallel with the floor) and intersecting the optical axis is considered a reefpost. The distance measured at each local minimum is denoised by blurring the depth map. 
 
@@ -159,7 +160,9 @@ This simple algorithm is fast enough to operate on a single-thread process on th
 
 A live stream of the depth image from the camera can be served from the Pi to the drive station. The feed is augmented with local minima of each row of the depth image (white lines) and the positions of reef posts that are published to the network tables (green circles). Here's a screen recording of a live-stream of one of our practice matches.
 
-![](../assets/videos/output.mp4)
+<video controls>
+    <source src="../assets/videos/output.mp4" type="video/mp4">
+</video controls>
 
 The time of flight camera was featured in a facebook post by FIRST Updates Now:
 

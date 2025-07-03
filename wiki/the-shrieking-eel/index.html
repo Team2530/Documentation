@@ -4335,17 +4335,28 @@
 <p>Note that the frustums shown in the image extend much further than the image suggests.</p>
 <p>Link to cropping method: <a href="https://github.com/Team2530/RobotCode2025/blob/1598b280134871187481bdb6dd90db7fc00f7f44/src/main/java/frc/robot/subsystems/Limelight.java#L71">https://github.com/Team2530/RobotCode2025/blob/1598b280134871187481bdb6dd90db7fc00f7f44/src/main/java/frc/robot/subsystems/Limelight.java#L71</a></p>
 <h4 id="depth-camera">Depth Camera</h4>
-<div class="admonition todo">
-<p class="admonition-title">TODO: Depth camera information</p>
-</div>
-<p><img alt="" src="../../assets/images/shrieking-eel-depth-camera.png" /></p>
+<p>This module is only responsible for automatically aiming the end effector towards the closest reefpost when attempting to place coral on the reef.</p>
+<p>A Raspberry Pi 5 attached to an <a href="https://www.arducam.com/time-of-flight-camera-for-raspberry-pi.html">Arducam Time of Flight camera</a> (SKU B0410) detected reefposts and published their locations in polar coordinates relative to the camera over network tables. </p>
+<p>The camera was selected for a few reasons:  </p>
+<ol>
+<li>low cost ($50)</li>
+<li>accuracy (down to 2cm)</li>
+<li>high tolerance to varying light conditions (operating on a narrow IR band that is rarely found in nature or indoors)</li>
+<li>ability to capture sharp details (unlike depth cameras that work by measuring stereo disparity or finding patterns in projected dot patterns)\</li>
+<li>high enough frame rate (30fps)</li>
+</ol>
+<p><img alt="" src="../../assets/images/shrieking-eel-depth-camera-annotated.jpg" /></p>
+<p>Any local minimum along the horizontal plane (running parallel with the floor) and intersecting the optical axis is considered a reefpost. The distance measured at each local minimum is denoised by blurring the depth map. </p>
+<p>L2 algae can sit on this plane too, interfering with reefpost detection by sitting very close to the robot when it places coral on algae. The robot ignores measurements from this sensor if algae is detected (if a "detected reefpost" is suspiciously close to the robot). </p>
+<p>This simple algorithm is fast enough to operate on a single-thread process on the Raspberry Pi without comprimising frame rate. </p>
+<p>A live stream of the depth image from the camera can be served from the Pi to the drive station. The feed is augmented with local minima of each row of the depth image (white lines) and the positions of reef posts that are published to the network tables (green circles). Here's a screen recording of a live-stream of one of our practice matches.</p>
+<video controls>
+    <source src="../assets/videos/output.mp4" type="video/mp4">
+</video controls>
+
 <p>The time of flight camera was featured in a facebook post by FIRST Updates Now:</p>
 <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F664317249562039%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
 
-<div class="admonition todo">
-<p class="admonition-title">TODO: Show a video that more accurately depicts the depth camera</p>
-<p>The First updates now clip doesn't actually show the depth camera aim correction in action (although they did record it), so we should add something to demonstrate it.</p>
-</div>
 <h4 id="360-camera">360 Camera</h4>
 <p>This is the first year that our team has built a robot with a 360 camera on it. The Shrieking Eel has a <a href="../insta360/" title="Insta360">Insta360</a> mounted at the base of the arm.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LslbrXiZlJY?si=-a2ZvpYGSXh3skN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -4391,7 +4402,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 9, 2025 00:49:41 UTC">June 9, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 3, 2025 16:05:08 UTC">July 3, 2025</span>
   </span>
 
     
@@ -4411,11 +4422,11 @@
   <span class="md-source-file__fact">
     <span class="md-icon" title="Contributors">
       
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.54 5.54 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13zM0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20zm24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9z"/></svg>
       
     </span>
     <nav>
-      michael-m-2983
+      michael-m-2983, m516
     </nav>
   </span>
 

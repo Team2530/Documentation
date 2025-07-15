@@ -24,3 +24,4 @@ The `36h11` family was used in 2024 and 2025, and is the family most likely to b
 - For [[FTC]], <https://ftc-docs.firstinspires.org/en/latest/apriltag/vision_portal/apriltag_intro/apriltag-intro.html>
 - <https://community.firstinspires.org/2025-apriltag-information> (2025 apriltag info)
 - Apriltag Images and User Guide: <https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/Apriltag_Images_and_User_Guide.pdf>
+- [[OpenCV Apriltag Detection PY|Detecting apriltags with OpenCV]]

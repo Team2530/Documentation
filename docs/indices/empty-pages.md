@@ -13,7 +13,6 @@ Empty pages aren't a bad thing, since they can still be linked to. However, it i
 - [[Battery]]
 - [[Bearing]]
 - [[Blinky Light]]
-- [[Box Tube]]
 - [[Bumpers]]
 - [[Bushing]]
 - [[CAN Bus]]

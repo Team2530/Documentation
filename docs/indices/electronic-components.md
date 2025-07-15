@@ -5,9 +5,9 @@
 | [[PDH]] or [[PDP]] | For power distribution. We usually use the PDH and not the PDP. | ![](../assets/images/pdh.png) |
 | [[Main Breaker]] | The main on/off switch. | ![](../assets/images/main-breaker.png) |
 | [[RoboRIO]] | CPU for the entire robot. | ![](../assets/images/roborio.png) |
-| Swerve Modules | If we are using swerve, there will be four of these. Each has two motors. | |
+| [[Swerve Drive|Swerve Modules]] | If we are using swerve, there will be four of these. Each has two motors. | |
 | Motors and motor controllers | | |
-| Robot Radio | | |
+| [[Robot Radio]] | | |
 | [[Blinky Light]] | | ![](../assets/images/blinky-light.png) |
 | [[VRM]] | | |
 | [[Battery]] | | |

@@ -11,6 +11,11 @@
 
 ![Image is from FRCDesign](../assets/images/gears-meshing.gif)
 
+## Gear Usage Types
+
+![Images are from HardwareFYI Newsletter](../assets/images/gear-types-1.jpeg)
+![Images are from HardwareFYI Newsletter](../assets/images/gear-types-2.jpeg)
+
 ## Further Reading
 
 - <https://frcdesign.org/learning-course/stage1/1B/gears/>

@@ -1,3 +1,8 @@
+---
+tags:
+  - Programming
+---
+
 # NetworkTables
 
 !!! warning "This page is not finished!"

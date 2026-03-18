@@ -1,3 +1,7 @@
+---
+tags:
+  - Programming
+---
 # AdvantageScope
 
 !!! warning "This page is not finished!"

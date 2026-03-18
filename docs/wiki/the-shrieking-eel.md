@@ -161,7 +161,7 @@ This simple algorithm is fast enough to operate on a single-thread process on th
 A live stream of the depth image from the camera can be served from the Pi to the drive station. The feed is augmented with local minima of each row of the depth image (white lines) and the positions of reef posts that are published to the network tables (green circles). Here's a screen recording of a live-stream of one of our practice matches.
 
 <video controls>
-    <source src="../assets/videos/output.mp4" type="video/mp4">
+    <source src="../assets/videos/the-shrieking-eel-depth-camera.mp4" type="video/mp4">
 </video controls>
 
 The time of flight camera was featured in a facebook post by FIRST Updates Now:

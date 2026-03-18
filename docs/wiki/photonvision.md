@@ -1,12 +1,12 @@
 ---
-Title: PhotonVision
-category: pages
-layout: default
+tags:
+  - Programming
 ---
 # PhotonVision
+
 ## Installing PhotonVision
 
-[PhotonVision] [PhotonVision](https://photonvision.org/)
+You can install PhotonVision from its [homepage](https://photonvision.org/).
 
 
 ## Calibrating the LimeLight for AprilTags

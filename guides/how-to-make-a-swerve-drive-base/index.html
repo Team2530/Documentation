@@ -420,6 +420,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coding-main-file-and-contructor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coding Main File and Contructor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coding-executorfunction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coding Executor/Function
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coding-periodic-executor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coding Periodic Executor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#backlinks" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1089,6 +1133,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coding-main-file-and-contructor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coding Main File and Contructor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coding-executorfunction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coding Executor/Function
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coding-periodic-executor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coding Periodic Executor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#backlinks" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1125,7 +1213,119 @@
 
 
 <h1 id="how-to-make-a-swerve-drive-base">How to make a Swerve Drive base</h1>
-<p>There is noting here, this a not fully made yet</p>
+<h2 id="creation">Creation</h2>
+<div class="language-text highlight"><pre><span></span><code>                                            Change to be your last folder \/, ext other \/
+</code></pre></div>
+<p>Hopefully you made your file from a folder and have this <package frc.robot.subsystems.(other folder[Not needed]);>
+To make a Swerve Drive Base you need a few imports:
+Findumentals:
+<import edu.wpi.first.math.kinematics.SwerveDriveKinematics;>
+<import edu.wpi.first.math.geometry.Translation2d;>
+<import edu.wpi.first.math.util.Units;>
+<import edu.wpi.first.math.kinematics.SwerveModuleState;>
+Posing and geometry:
+<import edu.wpi.first.math.kinematics.SwerveModulePosition;>
+<import edu.wpi.first.math.kinematics.SwerveDriveOdometry;>
+<import edu.wpi.first.math.geometry.Pose2d;>
+<import edu.wpi.first.wpilibj2.command.SubsystemBase></p>
+<p>These imports are aboslutly nessasary for the code to work. Without them, you:</p>
+<div class="language-text highlight"><pre><span></span><code>1. Can&#39;t track the robot&#39;s posistion.
+
+2. Autos wont work.
+</code></pre></div>
+<h2 id="coding-main-file-and-contructor">Coding Main File and Contructor</h2>
+<p>If you use a different method, it should still work. Since it will be in our case, we use <public class SwerveDrive extends SubsystemBase> with a &lt;{&gt; at the end where the code of the "defining" end of it goes.
+The next part is the Attributes:
+    SwerveDriveKinematics kinematics; &lt;- The Drive base
+    SwerveDriveOdometry   odometry; &lt;- This is how is knows where it is without "limelights", kinda.
+    Gyroscope             gyro; &lt;- Representing a gyroscope.
+    SwerveModule[]        swerveModules; &lt;- Representing swerve modules.</p>
+<p>Then come the "Contructor" or the compiler of the file.
+    <public SwerveDrive() 
+    {>
+This will be where everthing is defined in the file and where it originates.
+Firstly, define the drive base:
+    <kinematics = new SwerveDriveKinematics(
+            new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(12.5)), // Front Left
+            new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(-12.5)), // Front Right
+            new Translation2d(Units.inchesToMeters(-12.5), Units.inchesToMeters(12.5)), // Back Left
+            new Translation2d(Units.inchesToMeters(-12.5), Units.inchesToMeters(-12.5))  // Back Right
+        );>
+Then you need the gyro:
+    <gyro = new Gyroscope();>
+Along with the Odometry
+Defining the angle and rotation of each motor translating it into a 2D field
+    <odometry = new SwerveDriveOdometry(
+            kinematics,
+            gyro.getAngle(), // returns current gyro reading as a Rotation2d
+            new SwerveModulePosition[]{new SwerveModulePosition(), new SwerveModulePosition(), new SwerveModulePosition(), new SwerveModulePosition},
+            // Front-Left, Front-Right, Back-Left, Back-Right
+            new Pose2d(0,0,new Rotation2d()) // x=0, y=0, heading=0
+        );></p>
+<p>And close the constructor with a &lt;}&gt;
+It should look ike this after. 
+Change the measurement of the wheels from the center of the robot to match yours or it may not work right:</p>
+<p>&lt;public SwerveDrive() 
+    {</p>
+<div class="language-text highlight"><pre><span></span><code>    swerveModules = new SwerveModule[4];
+
+    kinematics = new SwerveDriveKinematics(
+        new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(12.5)), // Front Left
+        new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(-12.5)), // Front Right
+        new Translation2d(Units.inchesToMeters(-12.5), Units.inchesToMeters(12.5)), // Back Left
+        new Translation2d(Units.inchesToMeters(-12.5), Units.inchesToMeters(-12.5))  // Back Right
+    );
+
+    gyro = new Gyroscope();
+
+    odometry = new SwerveDriveOdometry(
+        kinematics,
+        gyro.getAngle(),
+        new SwerveModulePosition[]{new SwerveModulePosition(), new SwerveModulePosition(), new SwerveModulePosition(), new SwerveModulePosition},
+        // Front-Left, Front-Right, Back-Left, Back-Right
+        new Pose2d(0,0,new Rotation2d()) // x=0, y=0, heading=0
+    );
+
+}&gt;
+</code></pre></div>
+<h2 id="coding-executorfunction">Coding Executor/Function</h2>
+<p>To make he exectutor or the function of the drive base, you need <public void drive()
+    {>
+Within this, make a simple function for the robot to use.
+    &lt;// Create test ChassisSpeeds going X = 14in, Y=4in, and spins at 30deg per second.
+        ChassisSpeeds testSpeeds = new ChassisSpeeds(Units.inchesToMeters(14), Units.inchesToMeters(4), Units.degreesToRadians(30));</p>
+<div class="language-text highlight"><pre><span></span><code>    // Get the SwerveModuleStates for each module given the desired speeds.
+    SwerveModuleState[] swerveModuleStates = kinematics.toSwerveModuleStates(testSpeeds);
+    // Output order is Front-Left, Front-Right, Back-Left, Back-Right
+
+    swerveModules[0].setState(swerveModuleStates[0]);
+    swerveModules[1].setState(swerveModuleStates[1]);
+    swerveModules[2].setState(swerveModuleStates[2]);
+    swerveModules[3].setState(swerveModuleStates[3]);
+}
+
+// Fetch the current swerve module positions.
+public SwerveModulePosition[] getCurrentSwerveModulePositions()
+{
+    return new SwerveModulePosition[]{
+        new SwerveModulePosition(swerveModules[0].getDistance(), swerveModules[0].getAngle()), // Front-Left
+        new SwerveModulePosition(swerveModules[1].getDistance(), swerveModules[1].getAngle()), // Front-Right
+        new SwerveModulePosition(swerveModules[2].getDistance(), swerveModules[2].getAngle()), // Back-Left
+        new SwerveModulePosition(swerveModules[3].getDistance(), swerveModules[3].getAngle())  // Back-Right
+    };
+}&gt; &lt;- ends function
+</code></pre></div>
+<h2 id="coding-periodic-executor">Coding Periodic Executor</h2>
+<p>Hopefully you know this but if you don't, it just runs this periodicly for updating what is in this Executor:
+    <public void periodic()
+    {
+        // Update the odometry every run.
+        odometry.update(gyro.getAngle(),  getCurrentSwerveModulePositions());
+    }>
+After this, it is custom. There isn't much else to this but yeah.
+End the file with a:
+&lt;}&gt;
+So that it will work, because sometime we forget.</p>
 <h2 id="backlinks">Backlinks</h2>
 <p>No other pages link to this page.</p>
 
@@ -1150,7 +1350,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 10, 2026 00:15:40 UTC">April 10, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 10, 2026 01:00:26 UTC">April 10, 2026</span>
   </span>
 
     

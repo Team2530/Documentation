@@ -1219,15 +1219,17 @@
 <p>Hopefully you made your file from a folder and have this <package frc.robot.subsystems.(other folder[Not needed]);>
 To make a Swerve Drive Base you need a few imports:
 Findumentals:
-<import edu.wpi.first.math.kinematics.SwerveDriveKinematics;>
-<import edu.wpi.first.math.geometry.Translation2d;>
-<import edu.wpi.first.math.util.Units;>
-<import edu.wpi.first.math.kinematics.SwerveModuleState;>
+<code>java title="Imports" 
+import edu.wpi.first.math.kinematics.SwerveDriveKinematics;
+import edu.wpi.first.math.geometry.Translation2d;
+import edu.wpi.first.math.util.Units;
+import edu.wpi.first.math.kinematics.SwerveModuleState;</code>
 Posing and geometry:
-<import edu.wpi.first.math.kinematics.SwerveModulePosition;>
-<import edu.wpi.first.math.kinematics.SwerveDriveOdometry;>
-<import edu.wpi.first.math.geometry.Pose2d;>
-<import edu.wpi.first.wpilibj2.command.SubsystemBase></p>
+<code>java title="Imports" 
+import edu.wpi.first.math.kinematics.SwerveModulePosition;
+import edu.wpi.first.math.kinematics.SwerveDriveOdometry;
+import edu.wpi.first.math.geometry.Pose2d;
+import edu.wpi.first.wpilibj2.command.SubsystemBase</code></p>
 <p>These imports are aboslutly nessasary for the code to work. Without them, you:</p>
 <div class="language-text highlight"><pre><span></span><code>1. Can&#39;t track the robot&#39;s posistion.
 
@@ -1241,90 +1243,100 @@ The next part is the Attributes:
     Gyroscope             gyro; &lt;- Representing a gyroscope.
     SwerveModule[]        swerveModules; &lt;- Representing swerve modules.</p>
 <p>Then come the "Contructor" or the compiler of the file.
-    <public SwerveDrive() 
-    {>
-This will be where everthing is defined in the file and where it originates.
+<div class="language-java highlight"><span class="filename">File begining</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">SwerveDrive</span><span class="p">()</span><span class="w"> </span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="p">{</span>
+</span></code></pre></div></p>
+<p>This will be where everthing is defined in the file and where it originates.
 Firstly, define the drive base:
-    <kinematics = new SwerveDriveKinematics(
-            new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(12.5)), // Front Left
-            new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(-12.5)), // Front Right
-            new Translation2d(Units.inchesToMeters(-12.5), Units.inchesToMeters(12.5)), // Back Left
-            new Translation2d(Units.inchesToMeters(-12.5), Units.inchesToMeters(-12.5))  // Back Right
-        );>
+    <div class="language-java highlight"><span class="filename">kinematics</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">kinematics</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SwerveDriveKinematics</span><span class="p">(</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">        </span><span class="k">new</span><span class="w"> </span><span class="n">Translation2d</span><span class="p">(</span><span class="n">Units</span><span class="p">.</span><span class="na">inchesToMeters</span><span class="p">(</span><span class="mf">12.5</span><span class="p">),</span><span class="w"> </span><span class="n">Units</span><span class="p">.</span><span class="na">inchesToMeters</span><span class="p">(</span><span class="mf">12.5</span><span class="p">)),</span><span class="w"> </span><span class="c1">// Front Left</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">        </span><span class="k">new</span><span class="w"> </span><span class="n">Translation2d</span><span class="p">(</span><span class="n">Units</span><span class="p">.</span><span class="na">inchesToMeters</span><span class="p">(</span><span class="mf">12.5</span><span class="p">),</span><span class="w"> </span><span class="n">Units</span><span class="p">.</span><span class="na">inchesToMeters</span><span class="p">(</span><span class="o">-</span><span class="mf">12.5</span><span class="p">)),</span><span class="w"> </span><span class="c1">// Front Right</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">        </span><span class="k">new</span><span class="w"> </span><span class="n">Translation2d</span><span class="p">(</span><span class="n">Units</span><span class="p">.</span><span class="na">inchesToMeters</span><span class="p">(</span><span class="o">-</span><span class="mf">12.5</span><span class="p">),</span><span class="w"> </span><span class="n">Units</span><span class="p">.</span><span class="na">inchesToMeters</span><span class="p">(</span><span class="mf">12.5</span><span class="p">)),</span><span class="w"> </span><span class="c1">// Back Left</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">        </span><span class="k">new</span><span class="w"> </span><span class="n">Translation2d</span><span class="p">(</span><span class="n">Units</span><span class="p">.</span><span class="na">inchesToMeters</span><span class="p">(</span><span class="o">-</span><span class="mf">12.5</span><span class="p">),</span><span class="w"> </span><span class="n">Units</span><span class="p">.</span><span class="na">inchesToMeters</span><span class="p">(</span><span class="o">-</span><span class="mf">12.5</span><span class="p">))</span><span class="w">  </span><span class="c1">// Back Right</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="p">);</span>
+</span></code></pre></div>
 Then you need the gyro:
-    <gyro = new Gyroscope();>
+<div class="language-java highlight"><span class="filename">Gyro</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="w">    </span><span class="n">gyro</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Gyroscope</span><span class="p">();</span>
+</span></code></pre></div>
 Along with the Odometry
 Defining the angle and rotation of each motor translating it into a 2D field
-    <odometry = new SwerveDriveOdometry(
-            kinematics,
-            gyro.getAngle(), // returns current gyro reading as a Rotation2d
-            new SwerveModulePosition[]{new SwerveModulePosition(), new SwerveModulePosition(), new SwerveModulePosition(), new SwerveModulePosition},
-            // Front-Left, Front-Right, Back-Left, Back-Right
-            new Pose2d(0,0,new Rotation2d()) // x=0, y=0, heading=0
-        );></p>
-<p>And close the constructor with a &lt;}&gt;
+<div class="language-java highlight"><span class="filename">odometry</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="w">    </span><span class="n">odometry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SwerveDriveOdometry</span><span class="p">(</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">            </span><span class="n">kinematics</span><span class="p">,</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">            </span><span class="n">gyro</span><span class="p">.</span><span class="na">getAngle</span><span class="p">(),</span><span class="w"> </span><span class="c1">// returns current gyro reading as a Rotation2d</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">            </span><span class="k">new</span><span class="w"> </span><span class="n">SwerveModulePosition</span><span class="o">[]</span><span class="p">{</span><span class="k">new</span><span class="w"> </span><span class="n">SwerveModulePosition</span><span class="p">(),</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SwerveModulePosition</span><span class="p">(),</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SwerveModulePosition</span><span class="p">(),</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SwerveModulePosition</span><span class="p">},</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">            </span><span class="c1">// Front-Left, Front-Right, Back-Left, Back-Right</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">            </span><span class="k">new</span><span class="w"> </span><span class="n">Pose2d</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">new</span><span class="w"> </span><span class="n">Rotation2d</span><span class="p">())</span><span class="w"> </span><span class="c1">// x=0, y=0, heading=0</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">        </span><span class="p">);</span><span class="o">&gt;</span>
+</span></code></pre></div>
+And close the constructor with a &lt;}&gt;
 It should look ike this after. 
-Change the measurement of the wheels from the center of the robot to match yours or it may not work right:</p>
-<p>&lt;public SwerveDrive() 
-    {</p>
-<div class="language-text highlight"><pre><span></span><code>    swerveModules = new SwerveModule[4];
-
-    kinematics = new SwerveDriveKinematics(
-        new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(12.5)), // Front Left
-        new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(-12.5)), // Front Right
-        new Translation2d(Units.inchesToMeters(-12.5), Units.inchesToMeters(12.5)), // Back Left
-        new Translation2d(Units.inchesToMeters(-12.5), Units.inchesToMeters(-12.5))  // Back Right
-    );
-
-    gyro = new Gyroscope();
-
-    odometry = new SwerveDriveOdometry(
-        kinematics,
-        gyro.getAngle(),
-        new SwerveModulePosition[]{new SwerveModulePosition(), new SwerveModulePosition(), new SwerveModulePosition(), new SwerveModulePosition},
-        // Front-Left, Front-Right, Back-Left, Back-Right
-        new Pose2d(0,0,new Rotation2d()) // x=0, y=0, heading=0
-    );
-
-}&gt;
-</code></pre></div>
+Change the measurement of the wheels from the center of the robot to match yours or it may not work right:
+<div class="language-java highlight"><span class="filename">Swerve Drive</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kd">public</span><span class="w"> </span><span class="nf">SwerveDrive</span><span class="p">()</span><span class="w"> </span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">        </span><span class="n">swerveModules</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SwerveModule</span><span class="o">[</span><span class="mi">4</span><span class="o">]</span><span class="p">;</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">        </span><span class="n">kinematics</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SwerveDriveKinematics</span><span class="p">(</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">            </span><span class="k">new</span><span class="w"> </span><span class="n">Translation2d</span><span class="p">(</span><span class="n">Units</span><span class="p">.</span><span class="na">inchesToMeters</span><span class="p">(</span><span class="mf">12.5</span><span class="p">),</span><span class="w"> </span><span class="n">Units</span><span class="p">.</span><span class="na">inchesToMeters</span><span class="p">(</span><span class="mf">12.5</span><span class="p">)),</span><span class="w"> </span><span class="c1">// Front Left</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">            </span><span class="k">new</span><span class="w"> </span><span class="n">Translation2d</span><span class="p">(</span><span class="n">Units</span><span class="p">.</span><span class="na">inchesToMeters</span><span class="p">(</span><span class="mf">12.5</span><span class="p">),</span><span class="w"> </span><span class="n">Units</span><span class="p">.</span><span class="na">inchesToMeters</span><span class="p">(</span><span class="o">-</span><span class="mf">12.5</span><span class="p">)),</span><span class="w"> </span><span class="c1">// Front Right</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">            </span><span class="k">new</span><span class="w"> </span><span class="n">Translation2d</span><span class="p">(</span><span class="n">Units</span><span class="p">.</span><span class="na">inchesToMeters</span><span class="p">(</span><span class="o">-</span><span class="mf">12.5</span><span class="p">),</span><span class="w"> </span><span class="n">Units</span><span class="p">.</span><span class="na">inchesToMeters</span><span class="p">(</span><span class="mf">12.5</span><span class="p">)),</span><span class="w"> </span><span class="c1">// Back Left</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">            </span><span class="k">new</span><span class="w"> </span><span class="n">Translation2d</span><span class="p">(</span><span class="n">Units</span><span class="p">.</span><span class="na">inchesToMeters</span><span class="p">(</span><span class="o">-</span><span class="mf">12.5</span><span class="p">),</span><span class="w"> </span><span class="n">Units</span><span class="p">.</span><span class="na">inchesToMeters</span><span class="p">(</span><span class="o">-</span><span class="mf">12.5</span><span class="p">))</span><span class="w">  </span><span class="c1">// Back Right</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">        </span><span class="p">);</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">        </span><span class="n">gyro</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Gyroscope</span><span class="p">();</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="w">        </span><span class="n">odometry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SwerveDriveOdometry</span><span class="p">(</span>
+</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="w">            </span><span class="n">kinematics</span><span class="p">,</span>
+</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="w">            </span><span class="n">gyro</span><span class="p">.</span><span class="na">getAngle</span><span class="p">(),</span>
+</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="w">            </span><span class="k">new</span><span class="w"> </span><span class="n">SwerveModulePosition</span><span class="o">[]</span><span class="p">{</span><span class="k">new</span><span class="w"> </span><span class="n">SwerveModulePosition</span><span class="p">(),</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SwerveModulePosition</span><span class="p">(),</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SwerveModulePosition</span><span class="p">(),</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SwerveModulePosition</span><span class="p">},</span>
+</span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="w">            </span><span class="c1">// Front-Left, Front-Right, Back-Left, Back-Right</span>
+</span><span id="__span-6-20"><a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="w">            </span><span class="k">new</span><span class="w"> </span><span class="n">Pose2d</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">new</span><span class="w"> </span><span class="n">Rotation2d</span><span class="p">())</span><span class="w"> </span><span class="c1">// x=0, y=0, heading=0</span>
+</span><span id="__span-6-21"><a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="w">        </span><span class="p">);</span>
+</span><span id="__span-6-22"><a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a>
+</span><span id="__span-6-23"><a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="w">    </span><span class="p">}</span>
+</span></code></pre></div></p>
 <h2 id="coding-executorfunction">Coding Executor/Function</h2>
-<p>To make he exectutor or the function of the drive base, you need <public void drive()
-    {>
+<p>To make he exectutor or the function of the drive base, you need 
+<div class="language-java highlight"><span class="filename">Executer</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">drive</span><span class="p">()</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">        </span><span class="p">{</span>
+</span></code></pre></div>
 Within this, make a simple function for the robot to use.
-    &lt;// Create test ChassisSpeeds going X = 14in, Y=4in, and spins at 30deg per second.
-        ChassisSpeeds testSpeeds = new ChassisSpeeds(Units.inchesToMeters(14), Units.inchesToMeters(4), Units.degreesToRadians(30));</p>
-<div class="language-text highlight"><pre><span></span><code>    // Get the SwerveModuleStates for each module given the desired speeds.
-    SwerveModuleState[] swerveModuleStates = kinematics.toSwerveModuleStates(testSpeeds);
-    // Output order is Front-Left, Front-Right, Back-Left, Back-Right
-
-    swerveModules[0].setState(swerveModuleStates[0]);
-    swerveModules[1].setState(swerveModuleStates[1]);
-    swerveModules[2].setState(swerveModuleStates[2]);
-    swerveModules[3].setState(swerveModuleStates[3]);
-}
-
-// Fetch the current swerve module positions.
-public SwerveModulePosition[] getCurrentSwerveModulePositions()
-{
-    return new SwerveModulePosition[]{
-        new SwerveModulePosition(swerveModules[0].getDistance(), swerveModules[0].getAngle()), // Front-Left
-        new SwerveModulePosition(swerveModules[1].getDistance(), swerveModules[1].getAngle()), // Front-Right
-        new SwerveModulePosition(swerveModules[2].getDistance(), swerveModules[2].getAngle()), // Back-Left
-        new SwerveModulePosition(swerveModules[3].getDistance(), swerveModules[3].getAngle())  // Back-Right
-    };
-}&gt; &lt;- ends function
-</code></pre></div>
+<div class="language-java highlight"><span class="filename">Executor</span><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="w">    </span><span class="o">&lt;</span><span class="c1">// Create test ChassisSpeeds going X = 14in, Y=4in, and spins at 30deg per second.</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">        </span><span class="n">ChassisSpeeds</span><span class="w"> </span><span class="n">testSpeeds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ChassisSpeeds</span><span class="p">(</span><span class="n">Units</span><span class="p">.</span><span class="na">inchesToMeters</span><span class="p">(</span><span class="mi">14</span><span class="p">),</span><span class="w"> </span><span class="n">Units</span><span class="p">.</span><span class="na">inchesToMeters</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span><span class="w"> </span><span class="n">Units</span><span class="p">.</span><span class="na">degreesToRadians</span><span class="p">(</span><span class="mi">30</span><span class="p">));</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">        </span><span class="c1">// Get the SwerveModuleStates for each module given the desired speeds.</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">        </span><span class="n">SwerveModuleState</span><span class="o">[]</span><span class="w"> </span><span class="n">swerveModuleStates</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">kinematics</span><span class="p">.</span><span class="na">toSwerveModuleStates</span><span class="p">(</span><span class="n">testSpeeds</span><span class="p">);</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">        </span><span class="c1">// Output order is Front-Left, Front-Right, Back-Left, Back-Right</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">        </span><span class="n">swerveModules</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">setState</span><span class="p">(</span><span class="n">swerveModuleStates</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">);</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">        </span><span class="n">swerveModules</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="p">.</span><span class="na">setState</span><span class="p">(</span><span class="n">swerveModuleStates</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="p">);</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">        </span><span class="n">swerveModules</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span><span class="p">.</span><span class="na">setState</span><span class="p">(</span><span class="n">swerveModuleStates</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span><span class="p">);</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">        </span><span class="n">swerveModules</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span><span class="p">.</span><span class="na">setState</span><span class="p">(</span><span class="n">swerveModuleStates</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span><span class="p">);</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="w">    </span><span class="c1">// Fetch the current swerve module positions.</span>
+</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">SwerveModulePosition</span><span class="o">[]</span><span class="w"> </span><span class="nf">getCurrentSwerveModulePositions</span><span class="p">()</span>
+</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SwerveModulePosition</span><span class="o">[]</span><span class="p">{</span>
+</span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="w">            </span><span class="k">new</span><span class="w"> </span><span class="n">SwerveModulePosition</span><span class="p">(</span><span class="n">swerveModules</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">getDistance</span><span class="p">(),</span><span class="w"> </span><span class="n">swerveModules</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">getAngle</span><span class="p">()),</span><span class="w"> </span><span class="c1">// Front-Left</span>
+</span><span id="__span-8-19"><a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="w">            </span><span class="k">new</span><span class="w"> </span><span class="n">SwerveModulePosition</span><span class="p">(</span><span class="n">swerveModules</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="p">.</span><span class="na">getDistance</span><span class="p">(),</span><span class="w"> </span><span class="n">swerveModules</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="p">.</span><span class="na">getAngle</span><span class="p">()),</span><span class="w"> </span><span class="c1">// Front-Right</span>
+</span><span id="__span-8-20"><a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a><span class="w">            </span><span class="k">new</span><span class="w"> </span><span class="n">SwerveModulePosition</span><span class="p">(</span><span class="n">swerveModules</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span><span class="p">.</span><span class="na">getDistance</span><span class="p">(),</span><span class="w"> </span><span class="n">swerveModules</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span><span class="p">.</span><span class="na">getAngle</span><span class="p">()),</span><span class="w"> </span><span class="c1">// Back-Left</span>
+</span><span id="__span-8-21"><a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a><span class="w">            </span><span class="k">new</span><span class="w"> </span><span class="n">SwerveModulePosition</span><span class="p">(</span><span class="n">swerveModules</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span><span class="p">.</span><span class="na">getDistance</span><span class="p">(),</span><span class="w"> </span><span class="n">swerveModules</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span><span class="p">.</span><span class="na">getAngle</span><span class="p">())</span><span class="w">  </span><span class="c1">// Back-Right</span>
+</span><span id="__span-8-22"><a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a><span class="w">        </span><span class="p">};</span>
+</span><span id="__span-8-23"><a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">ends</span><span class="w"> </span><span class="n">function</span>
+</span></code></pre></div></p>
 <h2 id="coding-periodic-executor">Coding Periodic Executor</h2>
 <p>Hopefully you know this but if you don't, it just runs this periodicly for updating what is in this Executor:
-    <public void periodic()
-    {
-        // Update the odometry every run.
-        odometry.update(gyro.getAngle(),  getCurrentSwerveModulePositions());
-    }>
+<div class="language-java highlight"><span class="filename">Periodic</span><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">periodic</span><span class="p">()</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">        </span><span class="c1">// Update the odometry every run.</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">        </span><span class="n">odometry</span><span class="p">.</span><span class="na">update</span><span class="p">(</span><span class="n">gyro</span><span class="p">.</span><span class="na">getAngle</span><span class="p">(),</span><span class="w">  </span><span class="n">getCurrentSwerveModulePositions</span><span class="p">());</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">    </span><span class="p">}</span>
+</span></code></pre></div>
 After this, it is custom. There isn't much else to this but yeah.
 End the file with a:
-&lt;}&gt;
+<div class="language-java highlight"><span class="filename">ADD THIS</span><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="p">}</span>
+</span></code></pre></div>
 So that it will work, because sometime we forget.</p>
 <h2 id="backlinks">Backlinks</h2>
 <p>No other pages link to this page.</p>
@@ -1350,7 +1362,7 @@ So that it will work, because sometime we forget.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 10, 2026 01:00:26 UTC">April 10, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 10, 2026 01:16:25 UTC">April 10, 2026</span>
   </span>
 
     

@@ -1,8 +1,12 @@
 # How to make a Swerve Drive base
 
 ## Creation
-                                                Change to be your last folder \/, ext other \/
-Hopefully you made your file from a folder and have this <package frc.robot.subsystems.(other folder[Not needed]);>
+
+Hopefully you made your file from a folder and have this 
+```java title="Package"
+    Change to be your last folder \/, ext other \/
+package frc.robot.subsystems.(other folder[Not needed]);
+```
 To make a Swerve Drive Base you need a few imports:
 Findumentals:
 ```java title="Imports" 
@@ -26,7 +30,20 @@ These imports are aboslutly nessasary for the code to work. Without them, you:
     2. Autos wont work.
 
 ## Coding Main File and Contructor
-If you use a different method, it should still work. Since it will be in our case, we use <public class SwerveDrive extends SubsystemBase> with a <{> at the end where the code of the "defining" end of it goes.
+If you use a different method, it should still work. Since it will be in our case, we use 
+```java
+public class SwerveDrive extends SubsystemBase
+```
+with a 
+```java
+{
+```
+End:
+```java
+public class SwerveDrive extends SubsystemBase
+    {
+```
+at the end where the code of the "defining" end of it goes.
 The next part is the Attributes:
     SwerveDriveKinematics kinematics; <- The Drive base
     SwerveDriveOdometry   odometry; <- This is how is knows where it is without "limelights", kinda.
@@ -41,14 +58,14 @@ Then come the "Contructor" or the compiler of the file.
 
 This will be where everthing is defined in the file and where it originates.
 Firstly, define the drive base:
-    ```java title="kinematics"
+```java title="kinematics"
     kinematics = new SwerveDriveKinematics(
             new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(12.5)), // Front Left
             new Translation2d(Units.inchesToMeters(12.5), Units.inchesToMeters(-12.5)), // Front Right
             new Translation2d(Units.inchesToMeters(-12.5), Units.inchesToMeters(12.5)), // Back Left
             new Translation2d(Units.inchesToMeters(-12.5), Units.inchesToMeters(-12.5))  // Back Right
         );
-    ```
+```
 Then you need the gyro:
 ```java title="Gyro"
     gyro = new Gyroscope();
@@ -64,12 +81,15 @@ Defining the angle and rotation of each motor translating it into a 2D field
             new Pose2d(0,0,new Rotation2d()) // x=0, y=0, heading=0
         );>
 ```
-And close the constructor with a <}>
+And close the constructor with a 
+```java
+}
+```
 It should look ike this after. 
 Change the measurement of the wheels from the center of the robot to match yours or it may not work right:
 ```java title="Swerve Drive" 
-public SwerveDrive() 
-    {
+    public SwerveDrive() 
+        {
     
         swerveModules = new SwerveModule[4];
         
@@ -100,7 +120,7 @@ To make he exectutor or the function of the drive base, you need
 ```
 Within this, make a simple function for the robot to use.
 ```java title="Executor" 
-    <// Create test ChassisSpeeds going X = 14in, Y=4in, and spins at 30deg per second.
+    // Create test ChassisSpeeds going X = 14in, Y=4in, and spins at 30deg per second.
         ChassisSpeeds testSpeeds = new ChassisSpeeds(Units.inchesToMeters(14), Units.inchesToMeters(4), Units.degreesToRadians(30));
         
         // Get the SwerveModuleStates for each module given the desired speeds.

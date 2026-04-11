@@ -21,7 +21,7 @@ Here is the swerve code from our 2026 robot, as a reference: <https://github.com
 
 #### Java Boilerplate
 
-The robot swerve subsystem code starts with the package definition as usual, like any Java source file. It is in tbe package `frc.robot.subsystems`. 
+The robot swerve subsystem code starts with the package definition as usual, like any Java source file. It is in the package `frc.robot.subsystems`. 
 
 ```java title="SwerveSubsystem.java" linenums="1"
 package frc.robot.subsystems;
@@ -88,6 +88,8 @@ Then we declare the class.
 ```java title="SwerveSubsystem.java" linenums="56"
 public class SwerveSubsystem extends SubsystemBase {
 ```
+
+#### Autonomous
 
 After all the boilerplate we have a subclass for autonomous. Most of this is out of the scope of this guide, but you should know that this code is extending a class from [PathPlanner](https://pathplanner.dev/home.html), and has a field that is connected to Networktables for auto selection.
 
@@ -172,6 +174,8 @@ swerveDrive = new SwerveDrive(
                     new Pose2d()
             );
 ```
+
+As you can see, it uses `driveConfiguration` and `controllerConfiguration`. 
 
 #### Gearing
 

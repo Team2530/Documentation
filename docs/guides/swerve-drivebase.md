@@ -19,13 +19,15 @@ Here is the swerve code from our 2026 robot, as a reference: <https://github.com
 
 ### Review of 2026 Robot Code
 
+#### Java Boilerplate
+
 The robot swerve subsystem code starts with the package definition as usual, like any Java source file. It is in tbe package `frc.robot.subsystems`. 
 
 ```java title="SwerveSubsystem.java" linenums="1"
 package frc.robot.subsystems;
 ```
 
-After the package definition are the imports.
+After the package definition are the imports. From this you can see that we are using WPILib, Choreo, and YAGSL.
 
 ```java title="SwerveSubsystem.java" linenums="3"
 import static edu.wpi.first.units.Units.*;
@@ -152,14 +154,84 @@ After all the boilerplate we have a subclass for autonomous. Most of this is out
     }
 ```
 
+#### YAGSL instance
+
 On line 119 a field of type [`SwerveDrive`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html) is defined. This is important to note, because [`SwerveDrive`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html) is the YAGSL class that abstracts away hardware-dependent configuration from the software that controls it. The design goal there is that the code could work on a robot with a different type of Swerve Drive, different motors, etc. Everything specific to our swerve drive is stored in a config, and then that config gets passed to the [`SwerveDrive`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html) object.
 
 ```java title="SwerveSubsystem.java" linenums="119"
 private final SwerveDrive swerveDrive;
 ```
 
-TODO: Gearing, and everything after that
+This field is initialized in the class's constructor on line 325. 
 
+```java title="SwerveSubsystem.java" linenums="325"
+swerveDrive = new SwerveDrive(
+                    driveConfiguration,
+                    controllerConfiguration,
+                    DriveConstants.MAX_ROBOT_VELOCITY.in(MetersPerSecond),
+                    new Pose2d()
+            );
+```
+
+#### Gearing
+
+The code for the gearing is next. It uses a [`SendableChooser`](https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/smartdashboard/SendableChooser.html) to add a dropdown in smartdashboard that lets the driver pick between any of these gearings in the enum.
+
+```java title="SwerveSubsystem.java" linenums="125"
+private final SendableChooser<SwerveGearing> gearChooser;
+
+    enum SwerveGearing {
+        LIGHT(7.03f),
+        RIDICULUS(6.03f),
+        LUDICRUS(5.27f);
+
+        public final float gearRatio;
+
+        private SwerveGearing(float gearRatio) {
+            this.gearRatio = gearRatio;
+        }
+    }
+```
+
+The gearing code picks back up at line 350, where the sendablechooser is setup, the options are added, and the `changeGearing` method is registered.
+
+```java title="SwerveSubsystem.java" linenums="350"
+        // register gearshifter with smartdashboard
+        gearChooser = new SendableChooser<>();
+
+        gearChooser.addOption(
+            SwerveGearing.LIGHT.toString(),
+            SwerveGearing.LIGHT
+        );
+        gearChooser.setDefaultOption(
+            SwerveGearing.RIDICULUS.toString(),
+            SwerveGearing.RIDICULUS
+        );
+        gearChooser.addOption(
+            SwerveGearing.LUDICRUS.toString(),
+            SwerveGearing.LUDICRUS
+        );
+
+        gearChooser.onChange(gearing -> changeGearing(gearing));
+
+        SmartDashboard.putData("swerve/Drive Gearing", gearChooser);
+```
+
+The changeGearing method looks like this:
+
+```java title="SwerveSubsystem.java" linenums="546"
+public void changeGearing(SwerveGearing gearing) {
+        swerveDrive.setDriveMotorConversionFactor(
+            SwerveMath.calculateMetersPerRotation(
+                DriveConstants.Modules.WHEEL_DIAMETER.in(Meters)
+                ,
+                gearing.gearRatio
+            )
+        );
+    }
+```
+
+TODO: conversion factor setup, PID, Swerve Module Character, Swerve module configuration array, 
 
 ---
 

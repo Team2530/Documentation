@@ -7,7 +7,7 @@ This section of the guide will explain how to setup code for a swerve drivebase 
 
 Start by watching this introduction video: 
 
-<iframe> width="420" height="315"
+</iframe> width="420" height="315"
 src="https://www.youtube.com/embed/4Tcyn_oj_G0">
 </iframe>
 
